@@ -16,7 +16,7 @@ h1 a {
 body {
     margin: 0;
     padding: 0;
-    background-color: darkslategrey;
+    background-color: tan;
     color: black;
     font-family: Arial, sans-serif; /* Ensure font fallback */
 }
@@ -24,7 +24,7 @@ body {
 h1, h2, p, ul, li, a {
     margin: 0;
     padding: 0;
-    color: lightgrey;
+    color: lightcyan;
 }
 
 a {
@@ -48,14 +48,51 @@ a {
     flex: 1; /* Ensures the container takes up full height */
 }
 
+.wrapper {
+    position: relative; /* Required for positioning the overlay */
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+}
+
 .wrapper img {
+    display: block; /* Ensures no extra space below images */
     max-height: 250px; /* Ensures uniform image height */
     width: auto; /* Maintain aspect ratio */
     transition: transform 0.3s ease; /* Optional hover effect */
+    position: relative; /* Positioning for the overlay */
 }
 
 .wrapper:hover img {
-    transform: scale(1.02);
+    transform: scale(1.02); /* Optional zoom effect */
+    opacity: 0.7; /* Slightly reduce opacity */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for both effects */
+}
+
+/* Overlay title styling */
+.image-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Covers the entire image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0); /* Transparent background */
+    font-family: 'Tholoes', sans-serif; /* Fallback to sans-serif */
+    color: lightcyan;
+    font-size: 0em;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out; /* Smooth fade-in effect */
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.wrapper:hover .image-title {
+    opacity: 1; /* Show the title on hover */
+    font-size: 4em;
 }
 
 /* Mobile */
