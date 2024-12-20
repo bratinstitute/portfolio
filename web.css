@@ -37,6 +37,13 @@ h1, h2, ul, li, a {
     color: lightcyan;
 }
 
+h3 {
+    font-family: 'Space Mono', monospace;
+    font-weight: normal;
+    font-size: 1em;
+    margin-bottom: 20px; /* Add spacing between paragraphs */
+}
+
 p {
     margin-bottom: 20px; /* Add spacing between paragraphs */
     color: darkslategrey;
