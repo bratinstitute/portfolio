@@ -1,7 +1,7 @@
 /* Define the custom font */
 @font-face {
     font-family: 'Tholoes';
-    src: url('/tholoesdemo-jexel.ttf') format('truetype');
+    src: url('https://bratinstitute.com/portfolio/tholoesdemo-jexel.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
