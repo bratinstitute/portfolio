@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Define the custom font */
 @font-face {
     font-family: 'Tholoes';
@@ -13,11 +19,14 @@ h1 a {
     color: #C075AD;
 }
 
-body {
+/* Body and HTML need full height to enable proper flexbox layout */
+html, body {
     margin: 0;
     padding: 0;
     background-color: tan;
-    color: black;
+    height: 100%; /* Ensures the body takes up the full height of the viewport */
+    display: flex;
+    flex-direction: column; /* Sets a vertical layout */
     font-family: Arial, sans-serif; /* Ensure font fallback */
 }
 
@@ -92,7 +101,12 @@ a {
 
 .wrapper:hover .image-title {
     opacity: 1; /* Show the title on hover */
-    font-size: 4em;
+}
+
+footer {
+    text-align: right;
+    font-size: 0.8em;
+    padding: 10px;
 }
 
 /* Mobile */
@@ -114,11 +128,16 @@ a {
 
     .container {
         grid-template-columns: 1fr; /* Single column layout for mobile */
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center-align items horizontally */
+        gap: 20px; /* Add space between rows */
     }
     
     .wrapper {
         width: 80%;
-        text-align: center;
+        margin: 0 auto; /* Center the wrapper horizontally */
+        text-align: center; /* Align text and content to the center */
     }
 
     body, p, ul, li {
@@ -127,13 +146,14 @@ a {
         font-size: 1.3em;
     }
 
+    .wrapper:hover .image-title {
+        font-size: 3em;
+    }
+
     footer {
-        text-align: center;
         font-size: 0.5em;
         width: 100%; /* Ensure full width on mobile */
-        position: absolute;
         bottom: 0;
-        padding: 10px;
     }
 }
 
@@ -157,7 +177,7 @@ a {
     .container {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Auto-fit columns */
         grid-template-rows: repeat(2, auto); /* 2 rows, auto height */
-        gap: 20px; /* Space between grid items */
+        gap: 60px; /* Space between grid items */
     }
 
     /* Row 1 */
@@ -187,11 +207,12 @@ a {
         grid-row: 2;
     }
 
+    .wrapper:hover .image-title {
+        font-size: 4em;
+    }
+
     footer {
-        text-align: left;
-        position: absolute;
         bottom: 0;
         width: 100%; /* Full width of the page */
-        padding: 20px; /* Optional: Add padding if needed */
     }
 }
