@@ -40,6 +40,14 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: darkslategrey;
+}
+
+.selected {
+    color: darkslategrey;
+}
+
 .header {
     padding: 10px;
 }
@@ -151,20 +159,35 @@ footer {
 /* Mobile */
 @media screen and (max-width: 1023px) {
     .header {
-        font-size: 1.2em;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        flex-direction: column; /* Stack items vertically */
+        margin-top: 10px;
+    }
+
+    .header > div:first-child {
+        width: 100%; /* Full width for Lisi Schauer text */
+        text-align: center;
+    }
+
+    .header > div:nth-child(2) {
+        display: flex;
+        justify-content: center; /* Center the header2 menu below Lisi Schauer */
+        margin-top: 0px; /* Add space between the two rows */
+    }
+
+    .header2 p {
+        margin: 0 10px; /* Center the links */
+        font-size: 1.3em; /* Adjust font size for mobile view */
     }
 
     .header2 {
-        font-size: 0.8em;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 40%;
+        width: 100%; /* Full width for the menu */
     }
 
+    h1 a {
+        font-size: 1.5em;
+    }
+    
     .container {
         grid-template-columns: 1fr; /* Single column layout for mobile */
         display: flex;
@@ -194,7 +217,7 @@ footer {
     }
 
     footer {
-        font-size: 0.5em;
+        font-size: 0.8em;
         width: 100%; /* Ensure full width on mobile */
         bottom: 0;
     }
