@@ -195,6 +195,10 @@ footer {
         align-items: center; /* Center-align items horizontally */
         gap: 100px; /* Add space between rows */
     }
+
+    .container .wrapper.image2 {
+        margin-bottom: -80px; /* Adjust gap below this specific row */
+    }
     
     .wrapper {
         width: 80%;
