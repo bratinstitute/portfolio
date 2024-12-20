@@ -17,6 +17,7 @@ h1 a {
     font-family: 'Tholoes', sans-serif; /* Fallback to sans-serif */
     text-decoration: none; /* Optional: remove underline */
     color: #C075AD;
+    font-size: 1em;
 }
 
 /* Body and HTML need full height to enable proper flexbox layout */
@@ -30,10 +31,15 @@ html, body {
     font-family: Arial, sans-serif; /* Ensure font fallback */
 }
 
-h1, h2, p, ul, li, a {
+h1, h2, ul, li, a {
     margin: 0;
     padding: 0;
     color: lightcyan;
+}
+
+p {
+    margin-bottom: 20px; /* Add spacing between paragraphs */
+    color: darkslategrey;
 }
 
 a {
@@ -41,7 +47,7 @@ a {
 }
 
 a:hover {
-    color: darkslategrey;
+    color: #C075AD;
 }
 
 .selected {
@@ -54,6 +60,10 @@ a:hover {
 
 .header2 {
     padding: 10px;
+}
+
+.text {
+    padding: 5%;
 }
 
 .container {
@@ -154,6 +164,20 @@ footer {
     height: 100%; /* Maintain the aspect ratio set by the wrapper */
     z-index: 2; /* Video behind the frame */
     border: none;
+}
+
+.info-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full height of the viewport */
+}
+
+.info-page .text {
+    flex: 1; /* Push the footer to the bottom */
+}
+
+.info-page #footer {
+    margin-top: auto; /* Ensure the footer is at the bottom */
 }
 
 /* Mobile */
