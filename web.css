@@ -109,6 +109,46 @@ footer {
     padding: 10px;
 }
 
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    overflow: hidden; /* Prevent scrollbars for overflowing content */
+}
+
+.video-wrapper {
+    position: relative;
+    width: 500px; /* Frame width for desktop */
+    aspect-ratio: 4 / 3; /* Maintain 4:3 aspect ratio */
+    max-width: 100%; /* Ensure responsiveness */
+    height: auto; /* Height is determined by the aspect ratio */
+    margin: 0 auto; /* Center the wrapper horizontally */
+}
+
+.video-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px; /* Frame width for desktop */
+    height: auto;
+    object-fit: contain; /* Maintain aspect ratio of the frame */
+    z-index: 1; /* Frame on top of the video */
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position */
+    width: 80%; /* Fill the width of the wrapper */
+    height: 100%; /* Maintain the aspect ratio set by the wrapper */
+    z-index: 2; /* Video behind the frame */
+    border: none;
+}
+
 /* Mobile */
 @media screen and (max-width: 1023px) {
     .header {
@@ -154,6 +194,18 @@ footer {
         font-size: 0.5em;
         width: 100%; /* Ensure full width on mobile */
         bottom: 0;
+    }
+
+    .video-wrapper {
+        width: 250px; /* Frame width for mobile */
+    }
+
+    .video-frame {
+        width: 250px; /* Frame width for mobile */
+    }
+
+    .video-wrapper iframe {
+        width: 200px; /* Video width for mobile */
     }
 }
 
