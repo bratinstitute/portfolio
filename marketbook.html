@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Marketbook</title>
+      <link rel="stylesheet" type="text/css" href="web.css">
+      <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+   </head>
+   <body>
+      <div id="header"></div>
+      <script>
+         fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+      </script>
+      
+      <div class="text">
+         <p><a href="https://www.instagram.com/bratinstitute/" target="_blank">instagram</a></p>
+         <p><a href="https://www.linkedin.com/in/lisischauer/" target="_blank">linkedin</a></p>
+         <p><a href="mailto:lisi222@gmail.com" target="_blank">email</a></p>
+     </div>
+
+      <script src="https://player.vimeo.com/api/player.js"></script>
+      <div id="footer"></div>
+      <script>
+         fetch('footer.html')
+             .then(response => response.text())
+             .then(data => {
+                 document.getElementById('footer').innerHTML = data;
+             });
+      </script>
+   </body>
+</html>

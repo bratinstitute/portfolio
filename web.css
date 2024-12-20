@@ -212,6 +212,10 @@ footer {
         font-size: 1.5em;
     }
     
+    .text {
+        margin-right: 30%;
+    }
+    
     .container {
         grid-template-columns: 1fr; /* Single column layout for mobile */
         display: flex;
@@ -234,7 +238,7 @@ footer {
         max-height: 500px; /* Ensures uniform image height */
     }
     
-    body, p, ul, li {
+    body, ul, li {
         margin: 0;
         padding: 0;
         font-size: 1.3em;
@@ -280,6 +284,10 @@ footer {
         width: 25%;
     }
 
+    .text {
+        margin-right: 50%;
+    }
+    
     .container {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Auto-fit columns */
         grid-template-rows: repeat(2, auto); /* 2 rows, auto height */
