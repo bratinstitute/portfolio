@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<HTML>
+   <HEAD>
+      <TITLE>lisi schauer</TITLE>
+      <link rel="stylesheet" type="text/css" href="web.css">
+      <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+   </HEAD>
+   <BODY>
+      <div id="header"></div>
+<script>
+    fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header').innerHTML = data;
+        });
+</script>
+       
+      <div class="container">
+         <div class="wrapper">
+            <a href=test.html><img src="./images/marketbook.png" alt="custom" width="100%"></a>
+            <div class="captions">
+               <figcaption class="left-caption">pratt cambridge</figcaption>
+               <figcaption class="right-caption">60</figcaption>
+            </div>
+         </div>
+         <div class="wrapper">
+            <a href=test.html><img src="./images/marketbook.png" alt="custom" width="100%"></a>
+            <div class="captions">
+               <figcaption class="left-caption">pratt cambridge</figcaption>
+               <figcaption class="right-caption">60</figcaption>
+            </div>
+         </div>
+         <div class="wrapper">
+            <a href=test.html><img src="./images/marketbook.png" alt="custom" width="100%"></a>
+            <div class="captions">
+               <figcaption class="left-caption">pratt cambridge</figcaption>
+               <figcaption class="right-caption">60</figcaption>
+            </div>
+         </div>  
+         <div class="wrapper">
+            <a href=test.html><img src="./images/marketbook.png" alt="custom" width="100%"></a>
+            <div class="captions">
+               <figcaption class="left-caption">pratt cambridge</figcaption>
+               <figcaption class="right-caption">60</figcaption>
+            </div>
+         </div>
+      </div>
+
+      <div id="footer"></div>
+      <script>
+         fetch('footer.html')
+             .then(response => response.text())
+             .then(data => {
+                 document.getElementById('footer').innerHTML = data;
+             });
+     </script>
+   </BODY>
+</HTML>
