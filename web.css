@@ -152,7 +152,7 @@ footer {
 /* Mobile */
 @media screen and (max-width: 1023px) {
     .header {
-        font-size: 0.7em;
+        font-size: 1.2em;
         display: flex;
         align-items: center;
         justify-content: space-between;
