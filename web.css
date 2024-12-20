@@ -1,23 +1,41 @@
-body, h1, h2, p, ul, li {
+/* Define the custom font */
+@font-face {
+    font-family: 'Tholoes';
+    src: url('/tholoesdemo-jexel.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Apply the font to the h1 a link */
+h1 a {
+    font-family: 'Tholoes', sans-serif; /* Fallback to sans-serif */
+    text-decoration: none; /* Optional: remove underline */
+    color: #C075AD;
+}
+
+body {
     margin: 0;
     padding: 0;
+    background-color: darkslategrey;
+    color: black;
+}
+
+h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    color: lightgrey;
 }
 
 a {
-    color: black;
     text-decoration: none;
 }
 
 .header {
     padding: 10px;
-    background: white;
-    color: black;
   }
   
 .header2 {
     padding: 10px;
-    background: white;
-    color: black;
   }
 
 .container {
