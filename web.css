@@ -66,7 +66,6 @@ a {
 
 .wrapper img {
     display: block; /* Ensures no extra space below images */
-    max-height: 250px; /* Ensures uniform image height */
     width: auto; /* Maintain aspect ratio */
     transition: transform 0.3s ease; /* Optional hover effect */
     position: relative; /* Positioning for the overlay */
@@ -171,7 +170,7 @@ footer {
         display: flex;
         flex-direction: column; /* Stack items vertically */
         align-items: center; /* Center-align items horizontally */
-        gap: 20px; /* Add space between rows */
+        gap: 100px; /* Add space between rows */
     }
     
     .wrapper {
@@ -180,6 +179,10 @@ footer {
         text-align: center; /* Align text and content to the center */
     }
 
+    .wrapper img {
+        max-height: 500px; /* Ensures uniform image height */
+    }
+    
     body, p, ul, li {
         margin: 0;
         padding: 0;
@@ -187,7 +190,7 @@ footer {
     }
 
     .wrapper:hover .image-title {
-        font-size: 3em;
+        font-size: 5em;
     }
 
     footer {
@@ -259,10 +262,14 @@ footer {
         grid-row: 2;
     }
 
+    .wrapper img {
+        max-height: 250px; /* Ensures uniform image height */
+    }
+    
     .wrapper:hover .image-title {
         font-size: 4em;
     }
-
+    
     footer {
         bottom: 0;
         width: 100%; /* Full width of the page */
