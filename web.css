@@ -197,15 +197,15 @@ footer {
     }
 
     .video-wrapper {
-        width: 250px; /* Frame width for mobile */
+        width: 500px; /* Frame width for mobile */
     }
 
     .video-frame {
-        width: 250px; /* Frame width for mobile */
+        width: 500px; /* Frame width for mobile */
     }
 
     .video-wrapper iframe {
-        width: 200px; /* Video width for mobile */
+        width: 400px; /* Video width for mobile */
     }
 }
 
