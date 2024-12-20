@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<HTML>
+   <HEAD>
+      <TITLE>about</TITLE>
+      <link rel="stylesheet" type="text/css" href="web.css">
+      <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+   </HEAD>
+   <BODY>
+      <div id="header"></div>
+<script>
+    fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('header').innerHTML = data;
+        });
+</script>       
+
+Lisi Schauer is an MFA communications design student at Pratt.
+She graduated from USC in 2021 with a BA in communication and minors in sports media industries & communication design.
+<br><br>
+Interested parties can view Lisi's resume <a href="/images/LisiSchauer_Resume.pdf" target="_blank">here</a>.
+
+<div id="footer"></div>
+      <script>
+         fetch('footer.html')
+             .then(response => response.text())
+             .then(data => {
+                 document.getElementById('footer').innerHTML = data;
+             });
+     </script>
+   </BODY>
+</HTML>
