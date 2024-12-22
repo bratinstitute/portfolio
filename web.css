@@ -18,7 +18,7 @@
     font-style: normal;
 }
 
-/* Apply the font to the h1 a link */
+
 h1 a {
     font-family: 'Tholoes', sans-serif; /* Fallback to sans-serif */
     text-decoration: none; /* Optional: remove underline */
@@ -71,6 +71,12 @@ h3 {
 
 h3 a {
     color: black;
+}
+
+h5 {
+    font-family: 'Klavika', sans-serif; /* Fallback to sans-serif */
+    text-decoration: none; /* Optional: remove underline */
+    font-size: 2em;
 }
 
 p {
