@@ -81,7 +81,7 @@ h5 {
 
 p {
     margin-bottom: 20px; /* Add spacing between paragraphs */
-    color: darkslategrey;
+    color: #2f4f4f;
 }
 
 a {
@@ -276,6 +276,40 @@ footer {
     z-index: 5; /* Ensure it stays above the mb.gif */
 }
 
+.newsletter {
+    position: absolute; /* Fix it to the viewport */
+    bottom: 10px; /* Position it 10px from the bottom */
+    left: 5%;
+    background-color: #f8f8f8; /* Optional: Background for better visibility */
+    padding-top: 10px; /* Add some padding for aesthetics */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Shadow effect */
+    border-radius: 8px; /* Optional: Rounded corners */
+    text-align: center; /* Center-align the text inside */
+    z-index: 1000; /* Ensure it’s above other elements */
+ }
+ 
+ .newsletter input[type="email"] {
+    padding: 8px;
+    margin: 5px 0;
+    width: 80%; /* Adjust width as needed */
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+ }
+ 
+ .newsletter button {
+    padding: 8px 16px;
+    background-color: #3C5898;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+ }
+ 
+ .newsletter button:hover {
+    background-color: #2e4673; /* Slightly darker on hover */
+ }
+
 /* Mobile */
 @media screen and (max-width: 1023px) {
     .header {
@@ -375,6 +409,12 @@ footer {
         max-width: 100%;
         height: auto;
     }
+
+    .bottom-right {
+        position: fixed;
+        bottom: 55%;
+        right: 0;
+      }
 }
 
 /* Desktop */
