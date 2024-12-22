@@ -258,6 +258,24 @@ footer {
     right: 0;
   }
 
+.image-container {
+    position: relative;
+    width: 100%; /* Ensures the container takes up the full width */
+}
+
+.image-container img {
+    display: block; /* Prevents extra space below the image */
+}
+
+.sticker {
+    position: absolute;
+    top: -3%; /* Adjust this value to fine-tune vertical positioning */
+    right: 85%; /* Adjust this value to fine-tune horizontal positioning */
+    width: 20%; /* Keep the width flexible */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 5; /* Ensure it stays above the mb.gif */
+}
+
 /* Mobile */
 @media screen and (max-width: 1023px) {
     .header {
