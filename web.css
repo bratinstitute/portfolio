@@ -4,10 +4,16 @@
     box-sizing: border-box;
 }
 
-/* Define the custom font */
 @font-face {
     font-family: 'Tholoes';
-    src: url('https://lisischauer.com//tholoesdemo-jexel.ttf') format('truetype');
+    src: url('https://lisischauer.com/fonts/tholoesdemo-jexel.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Klavika';
+    src: url('https://lisischauer.com/fonts/Klavika/klavika-bold.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
