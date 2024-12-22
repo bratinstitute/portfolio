@@ -69,11 +69,16 @@ a:hover {
     padding: 10px;
 }
 
-.text {
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Flexible grid columns */
+    grid-template-rows: repeat(2, auto); /* 2 rows, auto height */
+    gap: 20px; /* Space between grid items */
     padding: 5%;
+    flex: 1; /* Ensures the container takes up full height */
 }
 
-.container {
+.container2 {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Flexible grid columns */
     grid-template-rows: repeat(2, auto); /* 2 rows, auto height */
@@ -220,6 +225,7 @@ footer {
     }
     
     .text {
+        padding: 5%;
         margin-right: 30%;
     }
     
@@ -292,10 +298,17 @@ footer {
     }
 
     .text {
+        padding: 5%;
         margin-right: 50%;
     }
     
     .container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Auto-fit columns */
+        grid-template-rows: repeat(2, auto); /* 2 rows, auto height */
+        gap: 60px; /* Space between grid items */
+    }
+
+    .container2 {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Auto-fit columns */
         grid-template-rows: repeat(2, auto); /* 2 rows, auto height */
         gap: 60px; /* Space between grid items */

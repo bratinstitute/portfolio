@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Profane</title>
+      <link rel="stylesheet" type="text/css" href="web.css">
+      <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+   </head>
+   <body>
+      <div id="header"></div>
+      <script>
+         fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+      </script>
+   
+   <div class="container2">
+      <div>
+         <p>
+            Profane.
+         </p>
+      </div>
+      <div>
+         <img src="./images/profane2.gif" alt="profane" style="width: 100%;">
+      </div>
+   </div>
+
+      <div id="footer"></div>
+      <script>
+         fetch('footer.html')
+             .then(response => response.text())
+             .then(data => {
+                 document.getElementById('footer').innerHTML = data;
+             });
+      </script>
+   </body>
+</html>
