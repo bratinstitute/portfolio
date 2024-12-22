@@ -277,7 +277,7 @@ footer {
 }
 
 .newsletter {
-    position: absolute; /* Fix it to the viewport */
+    position: fixed;
     bottom: 10px; /* Position it 10px from the bottom */
     left: 5%;
     background-color: #f8f8f8; /* Optional: Background for better visibility */
