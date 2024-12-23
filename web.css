@@ -281,7 +281,6 @@ footer {
     position: absolute;
     transform: rotate(-90deg);
     bottom: -90%; /* Adjust this value to fine-tune vertical positioning */
-    right: -15%; /* Adjust this value to fine-tune horizontal positioning */
     width: 80%; /* Keep the width flexible */
     height: auto; /* Maintain aspect ratio */
     z-index: 0; /* Ensure it stays above the mb.gif */
@@ -458,6 +457,10 @@ footer {
      h5 {
         font-weight: normal;
     }
+
+    .shelley-sticker {
+        right: -8%; /* Adjust this value to fine-tune horizontal positioning */
+    }
 }
 
 /* Desktop */
@@ -540,5 +543,9 @@ footer {
 
     h5 {
         font-weight: bold;
+    }
+
+    .shelley-sticker {
+        right: -15%; /* Adjust this value to fine-tune horizontal positioning */
     }
 }
