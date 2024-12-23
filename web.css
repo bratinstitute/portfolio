@@ -416,7 +416,8 @@ footer {
     .newsletter {
         left: 50%;
         transform: translate(-50%, 0%);
-        padding: 10px; /* Add some padding for aesthetics */
+        padding: 10px;
+        width: 40%;
      }
 }
 
