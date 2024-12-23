@@ -125,6 +125,16 @@ a:hover {
     padding: 10px;
 }
 
+.fakeheader {
+    padding: 10px;
+}
+
+.fakeheader h1 {
+    font-family: 'Tholoes', sans-serif; /* Fallback to sans-serif */
+    font-size: 2.6em;
+    color: #C075AD;
+}
+
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Flexible grid columns */
@@ -410,6 +420,24 @@ footer {
         display: flex;
         justify-content: center; /* Center the header2 menu below Lisi Schauer */
         margin-top: 0px; /* Add space between the two rows */
+    }
+
+    .fakeheader {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .fakeheader h1 {
+        font-size: 4em;
+        font-weight: lighter;
+    }
+
+    .fakeheader h1 a {
+        font-size: 1em;
+        font-weight: lighter;
     }
 
     .header2 p {

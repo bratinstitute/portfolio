@@ -1,36 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html style="background-color: mediumblue;">
    <head>
       <title>Partygirl</title>
       <link rel="stylesheet" type="text/css" href="web.css">
       <link rel="icon" type="image/x-icon" href="/images/favicon.png">
    </head>
-   <body>
-      <div id="header"></div>
-      <script>
-         fetch('header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('header').innerHTML = data;
-            });
-      </script>
+   <body style="background-color: mediumblue;">
+      <div class="header">
+         <div><h1><a href="https://lisischauer.com/">Lisi Schauer is the production designer behind</a></h1></div>
+         <!-- <div class="header2">
+            <p><a href="https://lisischauer.com/">work</a></p>
+            <p><a href="about.html">about</a></p>
+            <p><a href="contact.html">contact</a></p>
+         </div> -->
+      </div>
+
+      <div class="image-container">
+         <img src="./images/partygirl.png" alt="partygirl logo" style="width: 100%;">
+      </div>
+
+      <div class="fakeheader"><h1>
+         's next big project (dropping twenty twenty-five).
+         <a href="https://partygirlnyc.com/"  target="_blank">Click here to learn more about Partygirl.</a>
+         <a href="https://www.instagram.com/partygirl.band/"  target="_blank">Click here to follow the band on Instagram.</a>
+         Keep scrolling to see a super exclusive BTS sneak peek.
+      </a></h1></div>
 
       <div class="container2">
-         <div>
-            <img src="./images/fish2.png" alt="fish" style="width: 100%;">
-         </div>
-         <div>
-            <img src="./images/fish1.png" alt="fish" style="width: 100%;">
-         </div>
-         <div>
-            <img src="./images/fish2.png" alt="fish" style="width: 100%;">
-         </div>
+         <div></div>
+         <div></div>
          <div>
             <img src="./images/fish1.png" alt="fish" style="width: 100%;">
          </div>
-         <div>
-            <img src="./images/fish2.png" alt="fish" style="width: 100%;">
-         </div>
+         <div></div>
+         <div></div>
       </div>
 
       <div id="footer"></div>
