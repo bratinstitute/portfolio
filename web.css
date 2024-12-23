@@ -272,11 +272,12 @@ footer {
 
 .shelley-sticker {
     position: absolute;
-    bottom: -27%; /* Adjust this value to fine-tune vertical positioning */
-    right: -10%; /* Adjust this value to fine-tune horizontal positioning */
-    width: 90%; /* Keep the width flexible */
+    transform: rotate(-90deg);
+    bottom: -90%; /* Adjust this value to fine-tune vertical positioning */
+    right: -15%; /* Adjust this value to fine-tune horizontal positioning */
+    width: 80%; /* Keep the width flexible */
     height: auto; /* Maintain aspect ratio */
-    z-index: 1; /* Ensure it stays above the mb.gif */
+    z-index: 0; /* Ensure it stays above the mb.gif */
 }
 
 .newsletter {
