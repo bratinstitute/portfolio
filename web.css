@@ -450,7 +450,11 @@ footer {
         width: 40%;
      }
 
-    h5 {
+    h1 a {
+        font-weight: lighter;
+    }
+    
+     h5 {
         font-weight: normal;
     }
 }
