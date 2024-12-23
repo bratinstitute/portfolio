@@ -326,6 +326,7 @@ footer {
     grid-template-rows: repeat(2, auto); /* 2 rows, auto height */
     padding: 5%;
     flex: 1; /* Ensures the container takes up full height */
+    background-color: white;
 }
 
 .fb-innergrid {
