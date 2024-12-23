@@ -261,26 +261,33 @@ footer {
     transform: translate(-50%, 0%);
 }
 
+.profanetitle2 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
 .profane-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
     grid-template-rows: repeat(4, auto);  /* Four rows with height auto */
     gap: 10px 10px; /* Reduce vertical gap (row-gap) to 5px, horizontal gap (column-gap) stays 10px */
     padding: 10px; /* Optional: padding around the grid */
+    padding-bottom: 30px; /* Optional: padding around the grid */
     width: 100%; /* Responsive width */
 }
 
 .profane-grid div {
-    padding: 10px; /* Adjust padding for finer control */
+    padding: 0px; /* Adjust padding for finer control */
     text-align: center; /* Optional: center text */
 }
 
 .profane-grid p {
-    font-family: 'Futura', serif;
-    font-style: italic;
-    font-weight: lighter;
-    font-size: 1.6rem;
+    font-family: 'Bickham Script Pro', serif;
+    font-style: normal;
+    font-size: 2.6em;
     color: lightcyan;
+    margin: 0;
     line-height: 1.2; /* Adjust line height for tighter spacing */
 }
 
@@ -496,6 +503,10 @@ footer {
         top: -18%;
     }
 
+    .profanetitle2 {
+        top: 10%;
+    }
+
     .profanetop {
         padding: 60px;
     }
@@ -593,6 +604,10 @@ footer {
 
     .profanetitle {
         top: -8%;
+    }
+
+    .profanetitle2 {
+        top: 15%;
     }
 
     .profanetop {
