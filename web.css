@@ -291,6 +291,13 @@ footer {
     line-height: 1.2; /* Adjust line height for tighter spacing */
 }
 
+.profane-grid h4 {
+    text-align: left;
+    font-size: 1.2em;
+    margin: 10%;
+    line-height: 1; /* Adjust line height for tighter spacing */
+}
+
 .image-container {
     position: relative;
     width: 100%; /* Ensures the container takes up the full width */
@@ -298,6 +305,13 @@ footer {
 
 .image-container img {
     display: block; /* Prevents extra space below the image */
+}
+
+.image-container p {
+    font-family: 'Bickham Script Pro', serif;
+    font-style: normal;
+    font-size: 6em;
+    color: lightcyan;
 }
 
 .sticker {
