@@ -20,7 +20,7 @@
       <div>
          <p><h5>Birthing chairs. Divorce sales. Suspiciously phallic kitchenware.<br><br>All this and more in Marketbook.</h5></p>
          <div class="newsletter">
-            <h3 style="margin-bottom: -0px;">Get the newsletter:</h3>
+            <h5 style="margin-bottom: 3px; font-weight: normal; font-size: 1.8em;">Join the newsletter:</h5>
             <form id="newsletter-form">
                <input type="email" id="email" name="email" placeholder="email" required>
                <button type="submit">Subscribe</button>
@@ -85,7 +85,7 @@
 
        emailjs.send("service_16egy9p", "template_uyivra6", { email })
            .then(() => {
-               responseMessage.textContent = 'thx <3';
+               // responseMessage.textContent = 'thx <3';
                responseMessage.style.color = '#2f4f4f';
                document.getElementById('email').value = ''; // Clear input field
            })
