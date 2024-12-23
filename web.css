@@ -285,7 +285,6 @@ footer {
 .profane-grid p {
     font-family: 'Bickham Script Pro', serif;
     font-style: normal;
-    font-size: 3em;
     color: lightcyan;
     margin: 0;
     line-height: 1.2; /* Adjust line height for tighter spacing */
@@ -293,7 +292,6 @@ footer {
 
 .profane-grid h4 {
     text-align: left;
-    font-size: 1.2em;
     margin: 10%;
     line-height: 1; /* Adjust line height for tighter spacing */
 }
@@ -524,6 +522,15 @@ footer {
     .profanetop {
         padding: 60px;
     }
+
+    .profane-grid p {
+        font-size: 3em;
+    }
+
+    .profane-grid h4 {
+        font-size: 1em;
+        margin-top: -25%
+    }
 }
 
 /* Desktop */
@@ -626,5 +633,14 @@ footer {
 
     .profanetop {
         padding: 40px;
+    }
+
+    .profane-grid p {
+        font-size: 5.4em;
+    }
+
+    .profane-grid h4 {
+        font-size: 1.4em;
+        margin-top: -30%
     }
 }
