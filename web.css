@@ -234,29 +234,17 @@ footer {
     margin-top: auto; /* Ensure the footer is at the bottom */
 }
 
-.profane-container {
-    position: relative;
-    width: 100%;
-    height: 100vh; /* Adjust as needed */
-}
-
-.foreground {
+.profanesticker {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 20%);
-    width: 25%;
-    max-width: 100%;
-    height: auto;
-}
-
-.title-foreground {
-    position: absolute;
-    top: 8%;
     left: 50%;
     transform: translate(-50%, 0%);
-    max-width: 100%;
-    height: auto;
+    width: 25%;
+}
+
+.profanetitle {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
 }
 
 .image-container {
@@ -440,15 +428,6 @@ footer {
         width: 400px; /* Video width for mobile */
     }
 
-    .title-foreground {
-        position: absolute;
-        top: 22%;
-        left: 50%;
-        transform: translate(-50%, 0%);
-        max-width: 100%;
-        height: auto;
-    }
-
     .newsletter {
         left: 50%;
         transform: translate(-50%, 0%);
@@ -466,6 +445,18 @@ footer {
 
     .shelley-sticker {
         right: -8%; /* Adjust this value to fine-tune horizontal positioning */
+    }
+
+    .profanesticker {
+        top: 10%;
+    }
+
+    .profanetitle {
+        top: -8%;
+    }
+
+    .profanetop {
+        padding: 30px;
     }
 }
 
@@ -553,5 +544,17 @@ footer {
 
     .shelley-sticker {
         right: -15%; /* Adjust this value to fine-tune horizontal positioning */
+    }
+
+    .profanesticker {
+        top: 6%;
+    }
+
+    .profanetitle {
+        top: -8%;
+    }
+
+    .profanetop {
+        padding: 40px;
     }
 }
