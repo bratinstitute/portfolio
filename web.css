@@ -247,6 +247,15 @@ footer {
     transform: translate(-50%, 0%);
 }
 
+.profane-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Flexible grid columns */
+    grid-template-rows: repeat(2, auto); /* 2 rows, auto height */
+    gap: 20px; /* Space between grid items */
+    padding: 5%;
+    flex: 1; /* Ensures the container takes up full height */
+}
+
 .image-container {
     position: relative;
     width: 100%; /* Ensures the container takes up the full width */
@@ -370,7 +379,11 @@ footer {
     }
 
     h2 {
-        font-size: 2em;
+        font-size: 4em;
+    }
+
+    h4 {
+        font-size: 1.5em;
     }
     
     .text {
@@ -439,7 +452,7 @@ footer {
         font-weight: lighter;
     }
     
-     h5 {
+    h5 {
         font-weight: normal;
     }
 
@@ -452,11 +465,15 @@ footer {
     }
 
     .profanetitle {
-        top: -8%;
+        top: -18%;
     }
 
     .profanetop {
-        padding: 30px;
+        padding: 60px;
+    }
+
+    .profane-container {
+        margin-top: -30px;
     }
 }
 
@@ -556,5 +573,9 @@ footer {
 
     .profanetop {
         padding: 40px;
+    }
+
+    .profane-container {
+        margin-top: -50px;
     }
 }
