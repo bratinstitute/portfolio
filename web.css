@@ -265,23 +265,24 @@ footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
     grid-template-rows: repeat(4, auto);  /* Four rows with height auto */
-    gap: 10px; /* Optional: space between items */
+    gap: 10px 10px; /* Reduce vertical gap (row-gap) to 5px, horizontal gap (column-gap) stays 10px */
     padding: 10px; /* Optional: padding around the grid */
     width: 100%; /* Responsive width */
- }
- 
+}
+
 .profane-grid div {
-    padding: 10px;
+    padding: 10px; /* Adjust padding for finer control */
     text-align: center; /* Optional: center text */
- }
+}
 
 .profane-grid p {
-    font-family: 'Bickham Script Pro', serif;
-    font-style: normal;
-    font-size: 2.5rem;
+    font-family: 'Futura', serif;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 1.6rem;
     color: lightcyan;
-    padding-bottom: -10px;
- }
+    line-height: 1.2; /* Adjust line height for tighter spacing */
+}
 
 .image-container {
     position: relative;
