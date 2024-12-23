@@ -25,6 +25,20 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Zapfino';
+    src: url('https://lisischauer.com/fonts/Zapfino.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bickham Script Pro';
+    src: url('https://lisischauer.com/fonts/bickham-script-pro/Bickham Script Pro Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 h1 a {
     font-family: 'Tholoes', sans-serif; /* Fallback to sans-serif */
@@ -247,14 +261,27 @@ footer {
     transform: translate(-50%, 0%);
 }
 
-.profane-container {
+.profane-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Flexible grid columns */
-    grid-template-rows: repeat(2, auto); /* 2 rows, auto height */
-    gap: 20px; /* Space between grid items */
-    padding: 5%;
-    flex: 1; /* Ensures the container takes up full height */
-}
+    grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+    grid-template-rows: repeat(4, auto);  /* Four rows with height auto */
+    gap: 10px; /* Optional: space between items */
+    padding: 10px; /* Optional: padding around the grid */
+    width: 100%; /* Responsive width */
+ }
+ 
+.profane-grid div {
+    padding: 10px;
+    text-align: center; /* Optional: center text */
+ }
+
+.profane-grid p {
+    font-family: 'Bickham Script Pro', serif;
+    font-style: normal;
+    font-size: 2.5rem;
+    color: lightcyan;
+    padding-bottom: -10px;
+ }
 
 .image-container {
     position: relative;
@@ -299,7 +326,7 @@ footer {
     z-index: 1000; /* Ensure it’s above other elements */
  }
  
- .newsletter input[type="email"] {
+.newsletter input[type="email"] {
     padding: 8px;
     margin: 5px 0;
     width: 80%; /* Adjust width as needed */
@@ -308,7 +335,7 @@ footer {
     border-radius: 4px;
  }
  
- .newsletter button {
+.newsletter button {
     padding: 8px 16px;
     background-color: #3C5898;
     color: white;
@@ -339,7 +366,7 @@ footer {
     padding: 10px; /* Optional: Padding around the grid */
 }
  
- .fb-innergrid img {
+.fb-innergrid img {
     width: 100%; /* Ensures images fill grid cells */
     height: auto; /* Maintain aspect ratio */
     object-fit: contain; /* Avoid cropping */
@@ -471,10 +498,6 @@ footer {
     .profanetop {
         padding: 60px;
     }
-
-    .profane-container {
-        margin-top: -30px;
-    }
 }
 
 /* Desktop */
@@ -573,9 +596,5 @@ footer {
 
     .profanetop {
         padding: 40px;
-    }
-
-    .profane-container {
-        margin-top: -50px;
     }
 }
