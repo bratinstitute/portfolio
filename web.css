@@ -272,9 +272,9 @@ footer {
 
 .shelley-sticker {
     position: absolute;
-    bottom: -40%; /* Adjust this value to fine-tune vertical positioning */
+    bottom: -27%; /* Adjust this value to fine-tune vertical positioning */
     right: -10%; /* Adjust this value to fine-tune horizontal positioning */
-    width: 85%; /* Keep the width flexible */
+    width: 90%; /* Keep the width flexible */
     height: auto; /* Maintain aspect ratio */
     z-index: 1; /* Ensure it stays above the mb.gif */
 }
