@@ -14,6 +14,13 @@
 @font-face {
     font-family: 'Klavika';
     src: url('https://lisischauer.com/fonts/Klavika/klavika-bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Klavika';
+    src: url('https://lisischauer.com/fonts/Klavika/klavika-medium.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -313,6 +320,29 @@ footer {
     background-color: #2e4673; /* Slightly darker on hover */
  }
 
+.fb-outercontainer {
+    display: grid;
+    grid-template-columns: 25% 75%; /* Define column widths */
+    grid-template-rows: repeat(2, auto); /* 2 rows, auto height */
+    padding: 5%;
+    flex: 1; /* Ensures the container takes up full height */
+}
+
+.fb-innergrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Flexible grid layout */
+    grid-template-columns: repeat(4, 1fr); /* Maximum 4 columns */
+    gap: 10px; /* Small space between images */
+    padding: 10px; /* Optional: Padding around the grid */
+}
+ 
+ .fb-innergrid img {
+    width: 100%; /* Ensures images fill grid cells */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Avoid cropping */
+    display: block; /* Prevent inline spacing issues */
+}
+
 /* Mobile */
 @media screen and (max-width: 1023px) {
     .header {
@@ -419,6 +449,10 @@ footer {
         padding: 10px;
         width: 40%;
      }
+
+    h5 {
+        font-weight: normal;
+    }
 }
 
 /* Desktop */
@@ -498,4 +532,8 @@ footer {
     .newsletter {
         left: 2%;
      }
+
+    h5 {
+        font-weight: bold;
+    }
 }
