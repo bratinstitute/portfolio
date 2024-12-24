@@ -56,6 +56,7 @@ html, body {
     display: flex;
     flex-direction: column; /* Sets a vertical layout */
     font-family: Arial, sans-serif; /* Ensure font fallback */
+    scroll-behavior: smooth;
 }
 
 h1, ul, li, a {
@@ -138,7 +139,7 @@ a:hover {
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Flexible grid columns */
-    grid-template-rows: repeat(2, auto); /* 2 rows, auto height */
+    grid-template-rows: repeat(3, auto); /* 3 rows, auto height */
     gap: 20px; /* Space between grid items */
     padding: 5%;
     flex: 1; /* Ensures the container takes up full height */
@@ -585,7 +586,7 @@ footer {
     
     .container {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Auto-fit columns */
-        grid-template-rows: repeat(2, auto); /* 2 rows, auto height */
+        grid-template-rows: repeat(3, auto); /* 3 rows, auto height */
         gap: 60px; /* Space between grid items */
     }
 
@@ -620,6 +621,11 @@ footer {
     .image5 {
         grid-column: 4; /* Place image 5 in the fourth column */
         grid-row: 2;
+    }
+
+    .image6 {
+        grid-column: 3; /* Place image 5 in the fourth column */
+        grid-row: 3;
     }
 
     .wrapper img {
