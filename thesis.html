@@ -134,9 +134,16 @@
    <p>The third and (for now) final iteration of this idea is, to put it simply, for people who don't care about Taylor Swift and are skeptical about astrology. It is a basic personality quiz.</p>
    <p>I chose to model this quiz after the Myers-Briggs Type Indicator (MBTI), originally developed by Katharine Cook Briggs and her daughter Isabel Briggs Myers, because it is the most well-known of its kind. The MBTI tests for four categories: "extraversion-introversion," "sensing-intuition," "thinking-feeling," and "judgment-perceiving," resulting in 16 possible combinations, or personality types.</p>
    <p>The process began the same way as with the Taylor Swift project. I asked ChatGPT to assign all 30 MLB teams to Myers-Briggs personality types and then made adjustments as needed.</p>
+   <img src="./images/thesis/chat1.png" alt="ChatGPT log" style="width: 100%;">
    <p>This was simple enough. I then tasked ChatGPT with designing a Myers-Briggs-like personality quiz that, based on a user's answer path, would lead them to the MLB team that corresponded to their personality type.</p>
+   <img src="./images/thesis/chat2.png" alt="ChatGPT log" style="width: 100%;">
    <p>This is where simplicity ended. While fact checking the logic flow of the quiz ChatGPT gave back to me, I realized there was a big issue: ChatGPT cannot count higher than, like, 20. It starts to get confused. It would skip question numbers and teams, as well as program dead ends into the quiz that made certain results impossible to reach. I tried repeatedly to point out these issues, but fixing them always opened up other ones. I mapped ChatGPT's quiz logic on paper:</p>
+   <div>
+      <img src="./images/thesis/map1.jpg" alt="ChatGPT log" style="height: 250px;">
+      <img src="./images/thesis/map2.jpg" alt="ChatGPT log" style="height: 250px;">
+   </div>
    <p>Then I realized what the issue was and felt like a fool for wasting so much of my time with ChatGPT. The AI tool was planning the quiz from the top down and opening up pathways as it went, then leaving out necessary pathways and ultimately, team results, toward the end of the quiz as it either forgot what it was doing or just struggled more with the initial instructions I gave it. What I should have done from the beginning, knowing I needed the quiz to have 30 possible results, was map it from the bottom up:</p>
+   <img src="./images/thesis/map3.jpg" alt="ChatGPT log" style="width: 100%;">
    <p>This not only cleared up how to make the quiz functional, it made it much easier to map Myers-Briggs traits onto the questions. Since there were five tiers of questions, each of the first four tiers could test one MBTI category and the fifth could serve as a tiebreaker for teams that shared the same type. This also showed me that I only needed one question for each MBTI category because users who selected the introversion path in tier one would never see the extroversion path, and thus never know that its sensing-intuition, thinking-feeling, and judgment-perceiving questions were the same.</p>
    <p>With all the grown-up thinking out of the way, I decided to go back to ChatGPT and entrust it with the wording of the questions:</p>
    <div><p>Q1 [Tests for introversion-extroversion]: How do you feel most energized after a long week?
@@ -154,6 +161,10 @@
       <br>A) Finding the most logical and fair solution for everyone [thinking route]
       <br>B) Making sure people feel understood and valued in the process [feeling route]</p></div>
    <p>Next, I needed to come up with tiebreaker questions for the 28 teams that paired up to share fourteen personality types. This was another ChatGPT task that took a bit of guiding:</p>
+   <img src="./images/thesis/chat3.png" alt="ChatGPT log" style="width: 60%;">
+   <img src="./images/thesis/chat4.png" alt="ChatGPT log" style="width: 100%;">
+   <img src="./images/thesis/chat5.png" alt="ChatGPT log" style="width: 100%;">
+   <img src="./images/thesis/chat6.png" alt="ChatGPT log" style="width: 100%;">
    <p>You get the idea. Once my entire quiz was drafted, I set up another <a href="https://prattbaseball.com/mlbti/" target="_blank">website</a> to deploy it.</p>
    <p><b>SUMMARY: The Outside Pitch</b></p>
    <p>I now have <a href="https://prattbaseball.com/outside/" target="_blank">three websites</a> that use outside-baseball interests to initiate the first step in bringing new fans to the game. And these three don't have to be the end - there could be hundreds of them. The point is that as long as there are non-baseball topics about which people feel passionate, we can harness these topics to direct their passion toward baseball. It just takes one tool that resonates with someone to assign someone their new favorite team.</p>
