@@ -630,6 +630,10 @@ sup {
         float: right;
         text-align: left;
     }
+
+    sup {
+        font-size: 0.1em;
+      }
 }
 
 /* Desktop */
