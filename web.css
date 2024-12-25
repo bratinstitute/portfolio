@@ -431,11 +431,6 @@ footer {
     visibility: visible;
 }
 
-.text-section {
-    padding: 5%;
-    margin-right: 45%;
-}
-
 /* Mobile */
 @media screen and (max-width: 1023px) {
     .header {
@@ -592,6 +587,11 @@ footer {
         font-size: 1em;
         margin-top: -25%
     }
+
+    .text-section {
+        padding: 5%;
+        margin-right: 25%;
+    }
 }
 
 /* Desktop */
@@ -708,5 +708,10 @@ footer {
     .profane-grid h4 {
         font-size: 1.4em;
         margin-top: -30%
+    }
+
+    .text-section {
+        padding: 5%;
+        margin-right: 45%;
     }
 }
