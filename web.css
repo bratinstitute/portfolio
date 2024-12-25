@@ -453,6 +453,11 @@ sup {
     word-break: break-word; /* Ensures long words or links break to the next line */
 }
 
+.caption {
+    font-size: 0.5em;
+    /* text-align: center; */
+}
+
 /* Mobile */
 @media screen and (max-width: 1023px) {
     .header {
@@ -634,6 +639,11 @@ sup {
     sup {
         font-size: 0.3em;
       }
+
+    .caption {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
 }
 
 /* Desktop */
