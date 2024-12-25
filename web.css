@@ -432,16 +432,21 @@ footer {
 }
 
 .text-section {
-    padding: 5%;
     line-height: 1.25;
 }
 
 sup {
     vertical-align: top;
-    font-size: 0.75em; /* Scale down the text size */
+    font-size: 0.75em;
     position: relative;
-    top: -0.2em; /* Adjust to align visually without affecting line height */
+    top: -0.2em;
   }
+
+.outerouter {
+    padding-right: 5%;
+    padding: 5%;
+    /* overflow: hidden; Ensures container clears floats */
+}
 
 /* Mobile */
 @media screen and (max-width: 1023px) {
@@ -601,7 +606,9 @@ sup {
     }
 
     .text-section {
-        margin-right: 25%;
+        width: 70%; /* Main text column width */
+        margin-right: 5%; /* Space between main text and footnotes */
+        float: left; /* Aligns main text to the left */
     }
 
     .bigpicture {
@@ -611,6 +618,12 @@ sup {
     
     .bigpicture img {
         width: 100%;
+    }
+
+    .footnotes {
+        width: 20%;
+        float: right;
+        text-align: left;
     }
 }
 
@@ -731,7 +744,9 @@ sup {
     }
 
     .text-section {
-        margin-right: 45%;
+        width: 50%; /* Main text column width */
+        margin-right: 5%; /* Space between main text and footnotes */
+        float: left; /* Aligns main text to the left */
     }
 
     .bigpicture {
@@ -744,5 +759,11 @@ sup {
     
     .bigpicture img {
         width: 100%;
+    }
+
+    .footnotes {
+        width: 30%;
+        float: right;
+        text-align: left;
     }
 }
