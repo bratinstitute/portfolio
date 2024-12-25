@@ -611,7 +611,7 @@ sup {
     }
 
     .text-section {
-        width: 70%; /* Main text column width */
+        width: 65%; /* Main text column width */
         margin-right: 5%; /* Space between main text and footnotes */
         float: left; /* Aligns main text to the left */
     }
@@ -626,7 +626,7 @@ sup {
     }
 
     .footnotes {
-        width: 20%;
+        width: 22%;
         float: right;
         text-align: left;
     }
