@@ -592,6 +592,15 @@ footer {
         padding: 5%;
         margin-right: 25%;
     }
+
+    .bigpicture {
+        margin-top: -5%;
+        margin-bottom: -2%;
+    }
+    
+    .bigpicture img {
+        width: 100%;
+    }
 }
 
 /* Desktop */
@@ -713,5 +722,17 @@ footer {
     .text-section {
         padding: 5%;
         margin-right: 45%;
+    }
+
+    .bigpicture {
+        margin-top: -5%;
+        margin-bottom: -3%;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-right: 45%;
+    }
+    
+    .bigpicture img {
+        width: 100%;
     }
 }
