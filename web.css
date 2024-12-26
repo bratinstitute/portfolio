@@ -455,7 +455,6 @@ sup {
 
 .caption {
     font-size: 0.5em;
-    /* text-align: center; */
 }
 
 /* Mobile */
@@ -636,6 +635,10 @@ sup {
         text-align: left;
     }
 
+    .footnote-image img {
+        width: 100%;
+    }
+
     sup {
         font-size: 0.3em;
       }
@@ -784,5 +787,9 @@ sup {
         width: 30%;
         float: right;
         text-align: left;
+    }
+
+    .footnote-image img {
+        width: 50%;
     }
 }
