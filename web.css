@@ -706,13 +706,13 @@ sup {
     }
 
     .image5 {
-        grid-column: 3; /* Place image 5 in the fourth column */
-        grid-row: 3;
+        grid-column: 4; /* Place image 5 in the fourth column */
+        grid-row: 2;
     }
 
     .image6 {
-        grid-column: 4; /* Place image 5 in the fourth column */
-        grid-row: 2;
+        grid-column: 3; /* Place image 5 in the fourth column */
+        grid-row: 3;
     }
 
     .wrapper img {
