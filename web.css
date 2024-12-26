@@ -701,18 +701,18 @@ sup {
 
     /* Row 2 */
     .image4 {
-        grid-column: 2; /* Place image 4 in the second column */
+        grid-column: 1; /* Place image 4 in the second column */
         grid-row: 2;
     }
 
     .image5 {
-        grid-column: 4; /* Place image 5 in the fourth column */
+        grid-column: 3; /* Place image 5 in the fourth column */
         grid-row: 2;
     }
 
     .image6 {
-        grid-column: 3; /* Place image 5 in the fourth column */
-        grid-row: 3;
+        grid-column: 5; /* Place image 5 in the fourth column */
+        grid-row: 2;
     }
 
     .wrapper img {
