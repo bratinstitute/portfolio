@@ -530,11 +530,6 @@
       <p>We talked about Taylor Swift earlier, so I don't need to reiterate how or why she is popular. But the reason you're reading her name again now is because I needed to make another team assignment tool, because there are still people out there who don't care about baseball and don't care about astrology either. At least some of them care about Taylor Swift.</p>
       <p>Also important: she has at least 30 well-known songs. You know where I'm going with this. ChatGPT and I worked together to assign baseball teams to Taylor Swift songs.</p>
    </div>
-
-   <!-- <div class="footnotes">
-      <p>1.</p>
-      <p>2.</p>
-   </div> -->
 </div>
 
 <div class="bigpicture"><img src="./images/thesis/taylorsheet.png" alt="Taylor Swift spreadsheet"></div>
@@ -544,11 +539,6 @@
       <p>Not that you need to know what my and ChatGPT's conversations sound like, but the assignments are holistically based on each team's recent and historical success, public perception, team colors/aesthetics, lyrical allusions to regions or numbers of significance, and general vibes. You could argue that none of this is a precise science, that this approach is far less data-driven than the ALLSTARS compatibility algorithm. But you can't look me in the eye and tell me that "All Too Well (10 Minute Version)" is not the Chicago Cubs in song form.</p>
       <p>I set up a <a href="https://www.prattbaseball.com/swifties/" target="_blank">basic website</a> that assigns users to an MLB team based on their album and song selections. Then I stayed up all night to create 30 Polyvore-style outfit moodboards for all my Taylor Swift song/MLB team pairings. As one does.</p>
    </div>
-
-   <!-- <div class="footnotes">
-      <p>1.</p>
-      <p>2.</p>
-   </div> -->
 </div>
 
 <div class="bigpicture"><img src="./images/thesis/swiftmemes.png" alt="Taylor Swift outfit memes"></div>
@@ -557,14 +547,21 @@
    <div class="text-section">
       <p><b>Project III: MLBTI</b></p>
       <p>The third and (for now) final iteration of this idea is, to put it simply, for people who don't care about Taylor Swift and are skeptical about astrology. It is a basic personality quiz.</p>
-      <p>I chose to model this quiz after the Myers-Briggs Type Indicator (MBTI), originally developed by Katharine Cook Briggs and her daughter Isabel Briggs Myers, because it is the most well-known of its kind. The MBTI tests for four categories: "extraversion-introversion," "sensing-intuition," "thinking-feeling," and "judgment-perceiving," resulting in 16 possible combinations, or personality types.</p>
+   </div>
+</div>
+
+<div class="outerouter" style="margin-top: -10%;">
+   <div class="text-section">
+      <p>I chose to model this quiz after the Myers-Briggs Type Indicator (MBTI), originally developed by Katharine Cook Briggs and her daughter Isabel Briggs Myers,<sup>4</sup> because it is the most well-known of its kind.* 
+         The MBTI tests for four categories: "extraversion-introversion," "sensing-intuition," "thinking-feeling," and "judgment-perceiving,"<sup>5</sup> resulting in 16 possible combinations, or personality types.</p>
       <p>The process began the same way as with the Taylor Swift project. I asked ChatGPT to assign all 30 MLB teams to Myers-Briggs personality types and then made adjustments as needed.</p>
    </div>
 
-   <!-- <div class="footnotes">
-      <p>1.</p>
-      <p>2.</p>
-   </div> -->
+   <div class="footnotes">
+      <p>4. Adam Stamm, "14 Personality Tests You Should Know in 2023," Center for Internal Change, October 29, 2024, https://internalchange.com/list-of-personality-tests-and-personal-development-assessments.</p>
+      <p style="font-size: 1.6em;">* I also chose it because it lends itself to an easy pun title.</p>
+      <p>5. K. Nowack, "Is the Myers Briggs Type Indicator the Right Tool to Use?," Performance in Practice, American Society of Training and Development, Fall 1996, 6.</p>
+   </div>
 </div>
 
 <div class="bigpicture"><img src="./images/thesis/chat1.png" alt="ChatGPT log"></div>
@@ -573,11 +570,6 @@
    <div class="text-section">
       <p>This was simple enough. I then tasked ChatGPT with designing a Myers-Briggs-like personality quiz that, based on a user's answer path, would lead them to the MLB team that corresponded to their personality type.</p>
    </div>
-
-   <!-- <div class="footnotes">
-      <p>1. Citation text</p>
-      <p>2. Additional notes or citations.</p>
-   </div> -->
 </div>
 
 <div class="bigpicture"><img src="./images/thesis/chat2.png" alt="ChatGPT log"></div>
@@ -586,11 +578,6 @@
    <div class="text-section">
       <p>This is where simplicity ended. While fact checking the logic flow of the quiz ChatGPT gave back to me, I realized there was a big issue: ChatGPT cannot count higher than, like, 20. It starts to get confused. It would skip question numbers and teams, as well as program dead ends into the quiz that made certain results impossible to reach. I tried repeatedly to point out these issues, but fixing them always opened up other ones. I mapped ChatGPT's quiz logic on paper:</p>
    </div>
-
-   <!-- <div class="footnotes">
-      <p>1. Citation text</p>
-      <p>2. Additional notes or citations.</p>
-   </div> -->
 </div>
 
 <div class="bigpicture">
@@ -602,19 +589,24 @@
    <div class="text-section">
       <p>Then I realized what the issue was and felt like a fool for wasting so much of my time with ChatGPT. The AI tool was planning the quiz from the top down and opening up pathways as it went, then leaving out necessary pathways and ultimately, team results, toward the end of the quiz as it either forgot what it was doing or just struggled more with the initial instructions I gave it. What I should have done from the beginning, knowing I needed the quiz to have 30 possible results, was map it from the bottom up:</p>
    </div>
-
-   <!-- <div class="footnotes">
-      <p>1. Citation text</p>
-      <p>2. Additional notes or citations.</p>
-   </div> -->
 </div>
 
 <div class="bigpicture"><img src="./images/thesis/map3.jpg" alt="ChatGPT log"></div>
 
 <div class="outerouter">
    <div class="text-section">
-      <p>This not only cleared up how to make the quiz functional, it made it much easier to map Myers-Briggs traits onto the questions. Since there were five tiers of questions, each of the first four tiers could test one MBTI category and the fifth could serve as a tiebreaker for teams that shared the same type. This also showed me that I only needed one question for each MBTI category because users who selected the introversion path in tier one would never see the extroversion path, and thus never know that its sensing-intuition, thinking-feeling, and judgment-perceiving questions were the same.</p>
-      <p>With all the grown-up thinking out of the way, I decided to go back to ChatGPT and entrust it with the wording of the questions:</p>
+      <p>This not only cleared up how to make the quiz functional, it made it much easier to map Myers-Briggs traits onto the questions. Since there were five tiers of questions, each of the first four tiers could test one MBTI category and the fifth could serve as a tiebreaker for teams that shared the same type.* 
+         This also showed me that I only needed one question for each MBTI category because users who selected the introversion path in tier one would never see the extroversion path, and thus never know that its sensing-intuition, thinking-feeling, and judgment-perceiving questions were the same.</p>
+   </div>
+
+   <div class="footnotes">
+      <p style="font-size: 1.6em;">* Since there are 30 teams, the Arizona Diamondbacks (ISTP) and the Seattle Mariners (ISFP) are the only teams with those types and therefore required no fifth tier of questioning - no tiebreaker.</p>
+   </div>
+</div>
+      
+<div class="outerouter" style="margin-top: -10%;">
+   <div class="text-section">
+      <p>With all the grown-up thinking out of the way, I decided to go back to ChatGPT and entrust it with the wording of the questions:**</p>
       <div><p>Q1 [Tests for introversion-extroversion]: How do you feel most energized after a long week?
          <br>A) Going out to an event or gathering with a lively atmosphere [extroversion route]
          <br>B) Enjoying a quiet evening at home or spending time with a small group [introversion route]
@@ -632,10 +624,9 @@
       <p>Next, I needed to come up with tiebreaker questions for the 28 teams that paired up to share fourteen personality types. This was another ChatGPT task that took a bit of guiding:</p>
    </div>
 
-   <!-- <div class="footnotes">
-      <p>1. Citation text</p>
-      <p>2. Additional notes or citations.</p>
-   </div> -->
+   <div class="footnotes">
+      <p style="font-size: 1.6em;">** I switched the order of the thinking-feeling and judgment-perceiving questions because the non-tiebreaker results only differed from one another in thinking-feeling. By isolating the introverted, sensing, perceiving personality types and making thinking-feeling last, I could make it so that an ISTP or ISFP users' answer to question four would automatically direct them to their team/personality type and skip the tiebreaker round.</p>
+   </div>
 </div>
 
 <div class="bigpicture">
@@ -652,105 +643,106 @@
       <p>I now have <a href="https://prattbaseball.com/outside/" target="_blank">three websites</a> that use outside-baseball interests to initiate the first step in bringing new fans to the game. And these three don't have to be the end - there could be hundreds of them. The point is that as long as there are non-baseball topics about which people feel passionate, we can harness these topics to direct their passion toward baseball. It just takes one tool that resonates with someone to assign someone their new favorite team.</p>
       <p>Once someone has a favorite team, there are endless ways to pull them deeper down the baseball buy-in funnel. On each of my three sites, I've implemented fields where users can email their results to themselves and their friends. I've also added a disclaimer that I will be able to see these results on the backend and email them additional team-specific marketing materials until they opt out. Next semester, I plan to focus more on these next steps to solidify my new audience's baseball fandom. Perhaps these will include generating baseball horoscopes with preseason predictions for each ALLSTARS user's favorite team. Perhaps they'll involve making Taylor Swift Eras Tour-style posters announcing the dates that their favorite teams will be playing in New York. Perhaps I'll make the results page of each of my existing websites redirect to an online environment where new baseball fans can customize little avatars decked out in their new favorite teams' merch and interact with other fans of those teams. Beyond this, there are no limits. Major League Baseball already has an <a href="https://www.mlb.com/apps/mlb-app" target="_blank">official app</a> where these types of tools could be integrated. The more financially motivated perspective of someone desperate to get a job might point out that these tools could also loop in sports betting apps, which would rake in tons of money. It's all possible. It all starts with looking outside.</p>
    </div>
-
-   <!-- <div class="footnotes">
-      <p>1. Citation text</p>
-      <p>2. Additional notes or citations.</p>
-   </div> -->
 </div>
 
 <div id="team-section" class="outerouter">
    <h1>Athletics, Imposters</h1><br>
-      <div class="text-section">
-         <p>It's become very trendy among my generation to claim imposter syndrome. The term, originally coined by psychologists Pauline Rose Clance and Suzanne Imes, refers to when high achieving individuals (often women) doubt their own success and fear that they will be found out, despite being qualified for their current positions. These days, most people throw it around to describe feeling a little unsure of themselves, a little wary of how much they know, a little out of their element. There's a lot of that feeling going on when you first decide to become a sports fan, especially if you're already an adult, and especially if you're a woman. Being able to understand what's happening when you're watching a game on TV is not the same as feeling comfortable speaking the language, making the right predictions, and knowing which players you're supposed to heckle. And it certainly doesn't help when the existing members of your new sports community have years of experience you'll never be able to compete with.</p>
-         <p>There are upsides to the cultural saturation of this new meaning of "imposter syndrome," though. I'm not going to name names, but I will say it might make one feel more empowered to overstate her credentials, to act as an actual imposter and get away with it. To stretch the truth on her resume about how proficient she really is at Python, when in actuality, artificial intelligence is behind the scenes doing her coding dirty work.</p>
-         <p>I know what you're thinking. And it's okay - a lot of people are scared of AI tools because they seem inherently fraudulent. We've all heard the horror stories of high schoolers giving ChatGPT free reign on their English papers, turning them in without so much as a proofread, and missing the parts where the <a href="https://x.com/venturetwins/status/1648410430338129920?lang=en" target="_blank">AI language model totally rats them out</a>. It's also understandably frustrating to pour tuition dollars and years of your life into mastering a skill that now, thanks to artificial intelligence, any clown can fake with ease. But the beauty of it being such a new technology is that it's new to everyone. Unlike your typical fast-paced industry, resume-friendly hard skill, or die-hard fan community, your experience with AI tools can't be that far behind anyone else's.</p>
-         <p>What possibilities does that open up, not just on the individual level, but for every brand, across every industry? What are the benefits of a space where no one feels like an imposter?</p>
-         <p>-</p>
-         <p>In 2024, Pratt Institute did not have a baseball team at the nationally sanctioned or club level. In fact, I couldn't find any evidence of an official Pratt baseball team since 1927. So I made one.</p>
-      </div>   
-   
-      <!-- <div class="footnotes">
-         <p>1.</p>
-         <p>2.</p>
-      </div> -->
+   <div class="text-section">
+      <p>It's become very trendy among my generation to claim imposter syndrome. The term, originally coined by psychologists Pauline Rose Clance and Suzanne Imes, refers to when high achieving individuals (often women) doubt their own success and fear that they will be found out, despite being qualified for their current positions.<sup>1</sup> These days, most people throw it around to describe feeling a little unsure of themselves, a little wary of how much they know, a little out of their element. There's a lot of that feeling going on when you first decide to become a sports fan, especially if you're already an adult, and especially if you're a woman. Being able to understand what's happening when you're watching a game on TV is not the same as feeling comfortable speaking the language, making the right predictions, and knowing which players you're supposed to heckle. And it certainly doesn't help when the existing members of your new sports community have years of experience you'll never be able to compete with.</p>
+      <p>There are upsides to the cultural saturation of this new meaning of "imposter syndrome," though. I'm not going to name names, but I will say it might make one feel more empowered to overstate her credentials, to act as an actual imposter and get away with it. To stretch the truth on her resume about how proficient she really is at Python, when in actuality, artificial intelligence is behind the scenes doing her coding dirty work.</p>
+      <p>I know what you're thinking. And it's okay - a lot of people are scared of AI tools because they seem inherently fraudulent. We've all heard the horror stories of high schoolers giving ChatGPT free reign on their English papers, turning them in without so much as a proofread, and missing the parts where the <a href="https://x.com/venturetwins/status/1648410430338129920?lang=en" target="_blank">AI language model totally rats them out</a>. It's also understandably frustrating to pour tuition dollars and years of your life into mastering a skill that now, thanks to artificial intelligence, any clown can fake with ease. But the beauty of it being such a new technology is that it's new to everyone. Unlike your typical fast-paced industry, resume-friendly hard skill, or die-hard fan community, your experience with AI tools can't be that far behind anyone else's.</p>
+      <p>What possibilities does that open up, not just on the individual level, but for every brand, across every industry? What are the benefits of a space where no one feels like an imposter?</p>
+   </div>   
+
+   <div class="footnotes">
+      <p>1. Pauline Clance and Suzanne Imes, "The Imposter Phenomenon in High Achieving Women: Dynamics and Therapeutic Intervention," Psychotherapy: Theory, Research & Practice 15, no. 3 (1978): 241-247, https://doi.org/10.1037/h0086006.</p>
    </div>
+</div>
    
-      <div class="bigpicture"><img src="./images/thesis/1927.jpg" alt="Pratt Baseball news clipping from 1927"></div>
+<div class="bigpicture">
+   <img src="./images/thesis/1927.jpg" alt="Pratt Baseball news clipping from 1927">
+   <div class="caption"><p>"PRATT WINS OPENER, 20-3.; Castrovinci Hits Three Homers as Cooper Union Is Swamped," New York Times, April 10, 1927, https://timesmachine.nytimes.com/timesmachine/1927/04/10/96642518.html?pageNumber=133.</p></div>
+</div>
    
-   <div class="outerouter">
-      <div class="text-section">
-         <p>I went to the <a href="https://www.ncaa.com/stats/baseball/d1" target="_blank">NCAA D1 Baseball homepage</a>, where I copied the names of the 2024 season's top 250 players by batting average and top 200 players by earned run average and pasted all 450 names in a spreadsheet. I then separated their first and last names, randomized the columns to create 450 new fake names and selected the 34 most interesting or most realistically boring sounding ones to create a roster. I randomly assigned positions and class years based on what seemed like reasonable distributions for an NCAA 34-man roster, then pulled hometowns at random from various existing college baseball rosters. Then, because I forgot to do it while pulling hometowns, I Googled high schools with baseball programs in each of those cities and assigned those as well.</p>
-         <p>If this sounds extremely arbitrary, that's because it felt that way. It was fun picking the names, deciding my fake baseball team would have a Trey Favors and a Luke Pooser and a Griffin Kuntz, but none of these fake people really came to life for me. That is, until I got artificial intelligence involved.</p>
-         <p>Using FireflyAI, Adobe's generative AI tool, I typed in prompts like this:</p>
-         <div><p>"Photorealistic profile picture roster headshot for a college baseball player named Trey Favors who is a 18-year-old freshman infielder, 5'11, from San Diego, California"</p></div>
-         <p>And I got back results like this:</p>
-      </div>   
-   
-      <!-- <div class="footnotes">
-         <p>1.</p>
-         <p>2.</p>
-      </div> -->
+
+<div class="outerouter">
+   <div class="text-section">
+      <p>In 2024, Pratt Institute did not have a baseball team at the nationally sanctioned or club level. In fact, I couldn't find any evidence of an official Pratt baseball team since 1927. So I made one.</p>
+      <p>I went to the <a href="https://www.ncaa.com/stats/baseball/d1" target="_blank">NCAA D1 Baseball homepage</a>, where I copied the names of the 2024 season's top 250 players by batting average and top 200 players by earned run average and pasted all 450 names in a spreadsheet. I then separated their first and last names, randomized the columns to create 450 new fake names and selected the 34 most interesting or most realistically boring sounding ones to create a roster. I randomly assigned positions and class years based on what seemed like reasonable distributions for an NCAA 34-man roster, then pulled hometowns at random from various existing college baseball rosters. Then, because I forgot to do it while pulling hometowns, I Googled high schools with baseball programs in each of those cities and assigned those as well.</p>
    </div>
-   
-      <div class="bigpicture"><img src="./images/thesis/7 Trey Favors.jpg" alt="Trey Favors"></div>
-   
-   <div class="outerouter">
-      <div class="text-section">
-         <p>And then suddenly they were alive. And maybe some of them looked a little too old to be college students, and if you stared too long they could be terrifyingly uncanny, but somehow giving faces to the 34 names clicked everything into place. They were my children. From my fingertips, I gave birth to them. I made little adjustments to the data that, before, was meaningless. Like, of course I had to change Griffin Kuntz from a right-handed outfielder to a left-handed pitcher. He looks like this:</p>
-      </div>   
-   
-      <!-- <div class="footnotes">
-         <p>1.</p>
-         <p>2.</p>
-      </div> -->
+</div>
+         
+<div class="outerouter" style="margin-top: -10%;">
+   <div class="text-section">
+      <p>If this sounds extremely arbitrary, that's because it felt that way. It was fun picking the names, deciding my fake baseball team would have a Trey Favors and a Luke Pooser and a Griffin Kuntz,* but none of these fake people really came to life for me. That is, until I got artificial intelligence involved.</p>
+      <p>Using FireflyAI, Adobe's generative AI tool, I typed in prompts like this:</p>
+      <div><p>"Photorealistic profile picture roster headshot for a college baseball player named Trey Favors who is a 18-year-old freshman infielder, 5'11, from San Diego, California"</p></div>
+      <p>And I got back results like this:</p>
+   </div>   
+
+   <div class="footnotes">
+      <p style="font-size: 1.6em;">* and, although this name combo wasn't randomly generated but I saw the first and last names separately in my dataset and couldn't resist, a Reese Witherspoon</p>
    </div>
+</div>
    
-      <div class="bigpicture"><img src="./images/thesis/17 Griffin Kuntz.jpg" alt="Griffin Kuntz"></div>
+<div class="bigpicture"><img src="./images/thesis/7 Trey Favors.jpg" alt="Trey Favors"></div>
    
-   <div class="outerouter">
-      <div class="text-section">
-         <p>I bought the domain <a href="https://prattbaseball.com/" target="_blank">PrattBaseball.com</a> and set up an online roster to house my 34 sons. If you squint, it looks like it could be a real NCAA roster, with real guys from real cities with real athlete bios that, in reality, were generated with ChatGPT. Pratt Baseball may be a team full of imposters, but that's the point. They don't come with any of the history or the potential for gatekeeping that might scare newcomers away from existing sports teams. They are a blank slate on which my target audience of non-baseball fans at Pratt can write new narratives and enjoy the sports community in whatever way they please.</p>
-         <p>This brought to light another idea. If this team was initially designed for Pratt students, these students should feel like they had a hand in its creation. I wanted to make Pratt Baseball feel more participatory to ensure my audience would buy in before I implemented the next phase of my plan—simulating an entire season to overlap with the 2025 NCAA schedule, with randomly generated fake game results and regularly updating fake player statistics. Instead of me dictating the 34-man roster for the Pratt Baseball season, I decided that in January 2025 I will launch a Pratt Baseball Preseason, where students will have a month to look through a pool of 68 hopeful players, read their bios, and vote their 34 favorites onto the final roster to represent Pratt Institute. So I expanded.</p>
-         <p>I took my existing list of 450 scrambled first and last names and fed it through ChatGPT with instructions to rearrange the letters of each name, spelling out 450 brand new ones. Even when ChatGPT added or removed a couple letters to make the new names phonotactically viable, most results were still total gibberish. I tried to keep my selections at least somewhat reasonable.</p>
-      </div>   
+<div class="outerouter">
+   <div class="text-section">
+      <p>And then suddenly they were alive. And maybe some of them looked a little too old to be college students, and if you stared too long they could be terrifyingly uncanny, but somehow giving faces to the 34 names clicked everything into place. They were my children. From my fingertips, I gave birth to them. I made little adjustments to the data that, before, was meaningless. Like, of course I had to change Griffin Kuntz from a right-handed outfielder to a left-handed pitcher. He looks like this:</p>
+   </div>   
+
+   <!-- <div class="footnotes">
+      <p>1.</p>
+      <p>2.</p>
+   </div> -->
+</div>
    
-      <!-- <div class="footnotes">
-         <p>1.</p>
-         <p>2.</p>
-      </div> -->
-   </div>
+<div class="bigpicture"><img src="./images/thesis/17 Griffin Kuntz.jpg" alt="Griffin Kuntz"></div>
    
-      <div class="bigpicture"><img src="./images/thesis/75 Lexy Adnhea.jpg" alt="Lexy Adnhea"></div>
-   
-   <div class="outerouter">
-      <div class="text-section">
-         <p>Lexy Adnhea is a 20-year-old sophomore outfielder, 5'10, from San Antonio, Texas.</p>
-      </div>   
-   
-      <!-- <div class="footnotes">
-         <p>1.</p>
-         <p>2.</p>
-      </div> -->
-   </div>
-   
-      <div class="bigpicture"><img src="./images/thesis/77 Coin Klank.jpg" alt="Coin Klank"></div>
-   
-   <div class="outerouter">
-      <div class="text-section">
-         <p>Coin Klank is a 20-year-old junior left handed pitcher, 6'2, from Reno, Nevada.</p>
-      </div>   
-   
-      <!-- <div class="footnotes">
-         <p>1.</p>
-         <p>2.</p>
-      </div> -->
-   </div>
-   
-      <div class="bigpicture"><img src="./images/thesis/71 Luffin Grikintz.jpg" alt="Luffin Grinkitz"></div>
-   
-   <div class="outerouter">
-      <div class="text-section">
+<div class="outerouter">
+   <div class="text-section">
+      <p>I bought the domain <a href="https://prattbaseball.com/" target="_blank">PrattBaseball.com</a> and set up an online roster to house my 34 sons. If you squint, it looks like it could be a real NCAA roster, with real guys from real cities with real athlete bios that, in reality, were generated with ChatGPT. Pratt Baseball may be a team full of imposters, but that's the point. They don't come with any of the history or the potential for gatekeeping that might scare newcomers away from existing sports teams. They are a blank slate on which my target audience of non-baseball fans at Pratt can write new narratives and enjoy the sports community in whatever way they please.</p>
+      <p>This brought to light another idea. If this team was initially designed for Pratt students, these students should feel like they had a hand in its creation. I wanted to make Pratt Baseball feel more participatory to ensure my audience would buy in before I implemented the next phase of my plan—simulating an entire season to overlap with the 2025 NCAA schedule, with randomly generated fake game results and regularly updating fake player statistics. Instead of me dictating the 34-man roster for the Pratt Baseball season, I decided that in January 2025 I will launch a Pratt Baseball Preseason, where students will have a month to look through a pool of 68 hopeful players, read their bios, and vote their 34 favorites onto the final roster to represent Pratt Institute. So I expanded.</p>
+      <p>I took my existing list of 450 scrambled first and last names and fed it through ChatGPT with instructions to rearrange the letters of each name, spelling out 450 brand new ones. Even when ChatGPT added or removed a couple letters to make the new names phonotactically viable, most results were still total gibberish. I tried to keep my selections at least somewhat reasonable.</p>
+   </div>   
+
+   <!-- <div class="footnotes">
+      <p>1.</p>
+      <p>2.</p>
+   </div> -->
+</div>
+
+<div class="bigpicture"><img src="./images/thesis/75 Lexy Adnhea.jpg" alt="Lexy Adnhea"></div>
+
+<div class="outerouter">
+   <div class="text-section">
+      <p>Lexy Adnhea is a 20-year-old sophomore outfielder, 5'10, from San Antonio, Texas.</p>
+   </div>   
+
+   <!-- <div class="footnotes">
+      <p>1.</p>
+      <p>2.</p>
+   </div> -->
+</div>
+
+<div class="bigpicture"><img src="./images/thesis/77 Coin Klank.jpg" alt="Coin Klank"></div>
+
+<div class="outerouter">
+   <div class="text-section">
+      <p>Coin Klank is a 20-year-old junior left handed pitcher, 6'2, from Reno, Nevada.</p>
+   </div>   
+
+   <!-- <div class="footnotes">
+      <p>1.</p>
+      <p>2.</p>
+   </div> -->
+</div>
+
+<div class="bigpicture"><img src="./images/thesis/71 Luffin Grikintz.jpg" alt="Luffin Grinkitz"></div>
+
+<div class="outerouter">
+   <div class="text-section">
          <p>Luffin Grinkitz is a 22-year-old senior left handed pitcher, 6'1, from San Jose, California. He's also Griffin Kuntz's Wario.</p>
          <p>-</p>
          <p>Laying the groundwork to promote my AI baseball team has so far entailed some bot-like behavior. I thought it would be handy to have a legitimate-looking social media presence before the season got started, so I set up a Pratt Baseball Instagram and Twitter accounts, then began to grow their followings with platform-specific strategies.</p>
