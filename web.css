@@ -57,6 +57,7 @@ html, body {
     flex-direction: column; /* Sets a vertical layout */
     font-family: Arial, sans-serif; /* Ensure font fallback */
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 h1, ul, li, a {
