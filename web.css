@@ -465,6 +465,7 @@ sup {
     .header {
         display: flex;
         flex-direction: column; /* Stack items vertically */
+        padding-top: 2rem;
     }
 
     .header > div:first-child {
