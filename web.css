@@ -385,6 +385,7 @@ footer {
     grid-template-rows: repeat(2, auto); /* 2 rows, auto height */
     padding-left: 5%;
     padding-right: 5%;
+    padding-bottom: 10%;
     flex: 1; /* Ensures the container takes up full height */
     background-color: white;
 }
