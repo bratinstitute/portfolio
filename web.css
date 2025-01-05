@@ -426,9 +426,8 @@ footer {
 
 .lisisticker {
     position: absolute;
-    height: 300px;
+    height: 30%;
     width: auto;
-    bottom: 6%;
     z-index: 20;
 }
 
@@ -690,6 +689,7 @@ sup {
 
     .lisisticker {
         right: 5%;
+        bottom: 5%;
     }
 }
 
@@ -851,5 +851,6 @@ sup {
 
     .lisisticker {
         right: 5%;
+        bottom: 6%;
     }
 }
