@@ -407,6 +407,23 @@ footer {
     display: block; /* Prevent inline spacing issues */
 }
 
+.phonesticker {
+    position: absolute;
+    height: 50%;
+    width: auto;
+    bottom: 10%;
+    transform: rotate(20deg);
+    z-index: 20;
+}
+
+.pigeonsticker {
+    position: absolute;
+    height: 25%;
+    width: auto;
+    bottom: 8%;
+    z-index: 21;
+}
+
 /* Back to Top Button Styles */
 .back-to-top {
     position: fixed;
@@ -520,7 +537,11 @@ sup {
     
     .text {
         padding: 5%;
-        margin-right: 30%;
+        margin-right: 20%;
+    }
+
+    .text p {
+        font-size: 2.6em;
     }
     
     .container {
@@ -649,6 +670,14 @@ sup {
     .caption {
         padding-left: 5%;
         padding-right: 5%;
+    }
+
+    .phonesticker {
+        right: 18%;
+    }
+
+    .pigeonsticker {
+        right: 3%;
     }
 }
 
@@ -794,5 +823,17 @@ sup {
 
     .footnote-image img {
         width: 50%;
+    }
+
+    .text p {
+        font-size: 1.6em;
+    }
+
+    .phonesticker {
+        right: 10%;
+    }
+
+    .pigeonsticker {
+        right: 2%;
     }
 }
