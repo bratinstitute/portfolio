@@ -429,6 +429,7 @@ footer {
     height: 300px;
     width: auto;
     bottom: 6%;
+    z-index: 20;
 }
 
 /* Back to Top Button Styles */
