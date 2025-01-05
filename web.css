@@ -424,6 +424,13 @@ footer {
     z-index: 21;
 }
 
+.lisisticker {
+    position: absolute;
+    height: 40%;
+    width: auto;
+    bottom: 6%;
+}
+
 /* Back to Top Button Styles */
 .back-to-top {
     position: fixed;
@@ -679,6 +686,10 @@ sup {
     .pigeonsticker {
         right: 3%;
     }
+
+    .lisisticker {
+        right: 5%;
+    }
 }
 
 /* Desktop */
@@ -835,5 +846,9 @@ sup {
 
     .pigeonsticker {
         right: 2%;
+    }
+
+    .lisisticker {
+        right: 5%;
     }
 }
