@@ -318,13 +318,6 @@ footer {
     display: block; /* Prevents extra space below the image */
 }
 
-.image-container video {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
-}
-
 .image-container p {
     font-family: 'Bickham Script Pro', serif;
     font-style: normal;
