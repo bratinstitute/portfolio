@@ -280,6 +280,17 @@ footer {
     transform: translate(-50%, 0%);
 }
 
+.profanetitle3 {
+    position: absolute;
+    margin-left: 10%;
+}
+
+.profanetitle3 h4 {
+    text-align: left;
+    color: black;
+    line-height: 1.2; /* Adjust line height for tighter spacing */
+}
+
 .profane-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
@@ -632,6 +643,15 @@ sup {
         top: 10%;
     }
 
+    .profanetitle3 {
+        top: 48%;
+        margin-right: 20%;
+    }
+
+    .profanetitle3 h4 {
+        font-size: 1em;
+    }
+
     .profanetop {
         padding: 60px;
     }
@@ -794,6 +814,15 @@ sup {
 
     .profanetitle2 {
         top: 15%;
+    }
+
+    .profanetitle3 {
+        top: 55%;
+        margin-right: 40%;
+    }
+
+    .profanetitle3 h4 {
+        font-size: 1.4em;
     }
 
     .profanetop {
