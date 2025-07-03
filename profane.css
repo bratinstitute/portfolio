@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Tholoes';
+    src: url('https://lisischauer.com/fonts/tholoesdemo-jexel.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bickham Script Pro';
+    src: url('https://lisischauer.com/fonts/bickham-script-pro/Bickham Script Pro Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+h1 a {
+    font-family: 'Tholoes', sans-serif;
+    text-decoration: none;
+    color: #C075AD;
+    font-size: 1em;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+h1, ul, li, a {
+    margin: 0;
+    padding: 0;
+    color: lightcyan;
+}
+
+h2 { /* PROFANE LOGO */
+    font-size: 5em;
+    text-align: center;
+    color: lightcyan;
+    font-family: 'Futura', sans-serif;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+h3 { /* SACRED & PROFANE GRID TEXT */
+    font-size: 4em;
+    text-align: center;
+    color: lightcyan;
+    font-family: 'Futura', sans-serif;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+h4 {
+    padding-bottom: 30px;
+    font-size: 1em;
+    text-align: center;
+    color: lightcyan;
+    font-family: 'Futura', sans-serif;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+p {
+    margin-bottom: 20px; /* Add spacing between paragraphs */
+    color: #2f4f4f;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C075AD;
+}
+
+.selected {
+    color: darkslategrey;
+}
+
+.header {
+    padding: 10px;
+    margin-top: 0%;
+}
+
+.header2 {
+    padding: 10px;
+}
+
+footer {
+    text-align: right;
+    font-size: 0.8em;
+    padding: 10px;
+}
+
+.profanesticker {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 25%;
+}
+
+.profanetitle {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.profanetitle2 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.profanetitle3 {
+    position: absolute;
+    margin-left: 10%;
+}
+
+.profanetitle3 h4 {
+    text-align: left;
+    color: black;
+    line-height: 1.2; /* Adjust line height for tighter spacing */
+}
+
+.profane-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+    grid-template-rows: repeat(4, auto);  /* Four rows with height auto */
+    gap: 10px 10px; /* Reduce vertical gap (row-gap) to 5px, horizontal gap (column-gap) stays 10px */
+    padding: 10px; /* Optional: padding around the grid */
+    padding-bottom: 30px; /* Optional: padding around the grid */
+    width: 100%; /* Responsive width */
+}
+
+.profane-grid div {
+    padding: 0px; /* Adjust padding for finer control */
+    text-align: center; /* Optional: center text */
+}
+
+.profane-grid p {
+    font-family: 'Bickham Script Pro', serif;
+    font-style: normal;
+    color: lightcyan;
+    margin: 0;
+    line-height: 1.2; /* Adjust line height for tighter spacing */
+}
+
+.profane-grid h4 {
+    text-align: left;
+    margin: 10%;
+    line-height: 1.2; /* Adjust line height for tighter spacing */
+}
+
+.image-container {
+    position: relative;
+    width: 100%; /* Ensures the container takes up the full width */
+}
+
+.image-container img {
+    display: block; /* Prevents extra space below the image */
+}
+
+.image-container p {
+    font-family: 'Bickham Script Pro', serif;
+    font-style: normal;
+    font-size: 6em;
+    color: lightcyan;
+}
+
+/* Mobile */
+@media screen and (max-width: 1023px) {
+    .header {
+        display: flex;
+        flex-direction: column; /* Stack items vertically */
+        padding-top: 2rem;
+    }
+
+    .header > div:first-child {
+        width: 100%; /* Full width for Lisi Schauer text */
+        text-align: center;
+    }
+
+    .header > div:nth-child(2) {
+        display: flex;
+        justify-content: center; /* Center the header2 menu below Lisi Schauer */
+        margin-top: 0px; /* Add space between the two rows */
+    }
+
+    .header2 p {
+        margin: 0 10px; /* Center the links */
+        font-size: 1.3em; /* Adjust font size for mobile view */
+    }
+
+    .header2 {
+        width: 100%; /* Full width for the menu */
+    }
+    
+    h1 a {
+        font-size: 2em;
+        font-weight: lighter;
+    }
+
+    h3 {
+        font-size: 3em;
+    }
+
+    h4 {
+        font-size: 1.5em;
+    }
+    
+    body, ul, li {
+        margin: 0;
+        padding: 0;
+        font-size: 1.3em;
+    }
+
+    footer {
+        font-size: 0.8em;
+        width: 100%; /* Ensure full width on mobile */
+        bottom: 0;
+    }
+
+    .profanesticker {
+        top: 10%;
+    }
+
+    .profanetitle {
+        top: -18%;
+    }
+
+    .profanetitle2 {
+        top: 10%;
+    }
+
+    .profanetitle3 {
+        top: 48%;
+        margin-right: 20%;
+    }
+
+    .profanetitle3 h4 {
+        font-size: 1em;
+    }
+
+    .profanetop {
+        padding: 60px;
+    }
+
+    .profane-grid p {
+        font-size: 3em;
+    }
+
+    .profane-grid h4 {
+        font-size: 1em;
+        margin-top: -30%
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+    .header {
+        font-size: 1.3em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header2 {
+        font-size: 1em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 25%;
+    }
+    
+    footer {
+        bottom: 0;
+        width: 100%; /* Full width of the page */
+    }
+
+    .profanesticker {
+        top: 6%;
+    }
+
+    .profanetitle {
+        top: -8%;
+    }
+
+    .profanetitle2 {
+        top: 15%;
+    }
+
+    .profanetitle3 {
+        top: 55%;
+        margin-right: 40%;
+    }
+
+    .profanetitle3 h4 {
+        font-size: 1.4em;
+    }
+
+    .profanetop {
+        padding: 40px;
+    }
+
+    .profane-grid p {
+        font-size: 5.4em;
+    }
+
+    .profane-grid h4 {
+        font-size: 1.4em;
+        margin-top: -30%
+    }
+}
