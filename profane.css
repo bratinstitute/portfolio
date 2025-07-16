@@ -111,6 +111,29 @@ footer {
     width: 25%;
 }
 
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
+    flex-wrap: nowrap;
+    position: relative;
+    z-index: 2;
+}
+
+.wrapper img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    flex: 1 1 0;
+    object-fit: contain;
+    min-width: 0;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
 .profanetitle {
     position: absolute;
     left: 50%;
@@ -265,6 +288,15 @@ footer {
         font-size: 1em;
         margin-top: -30%
     }
+
+    .wrapper img {
+        max-width: 33vw;
+        max-height: 30vw;
+    }
+    .wrapper {
+        gap: 8px;
+        margin-top: -120px;
+    }
 }
 
 /* Desktop */
@@ -321,5 +353,9 @@ footer {
     .profane-grid h4 {
         font-size: 1.4em;
         margin-top: -30%
+    }
+
+    .wrapper {
+        margin-top: -140px;
     }
 }
