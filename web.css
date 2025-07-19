@@ -26,13 +26,6 @@
 }
 
 @font-face {
-    font-family: 'Zapfino';
-    src: url('https://lisischauer.com/fonts/Zapfino.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: 'Bickham Script Pro';
     src: url('https://lisischauer.com/fonts/bickham-script-pro/Bickham Script Pro Regular.ttf') format('truetype');
     font-weight: normal;
@@ -41,21 +34,20 @@
 
 
 h1 a {
-    font-family: 'Tholoes', sans-serif; /* Fallback to sans-serif */
-    text-decoration: none; /* Optional: remove underline */
+    font-family: 'Tholoes', sans-serif;
+    text-decoration: none;
     color: #C075AD;
     font-size: 1em;
 }
 
-/* Body and HTML need full height to enable proper flexbox layout */
 html, body {
     margin: 0;
     padding: 0;
     background-color: tan;
-    height: 100%; /* Ensures the body takes up the full height of the viewport */
+    height: 100%;
     display: flex;
-    flex-direction: column; /* Sets a vertical layout */
-    font-family: Arial, sans-serif; /* Ensure font fallback */
+    flex-direction: column;
+    font-family: Arial, sans-serif;
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
