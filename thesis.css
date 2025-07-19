@@ -1,5 +1,6 @@
 html, body {
     background-color: darkseagreen;
+    scroll-behavior: smooth;
 }
 
 h2 {
@@ -43,6 +44,7 @@ h4 {
     padding: 5vw 3vw 3vw 5vw;
     box-sizing: border-box;
     grid-column: 1 / 2;
+    margin-right: 10%;
 }
 
 .cover-image-container {
@@ -53,7 +55,7 @@ h4 {
     min-height: 100vh;
     grid-column: 2 / 3;
     z-index: 1;
-    margin-left: 0; /* Remove previous offset */
+    margin-left: 0;
 }
 
 .cover-image-container img {
@@ -63,7 +65,7 @@ h4 {
     height: auto;
     display: block;
     object-fit: contain;
-    margin-right: 20%;
+    margin-right: 20vw;
 }
 
 .carousel-container {
