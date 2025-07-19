@@ -24,19 +24,16 @@ h4 {
 }
 
 .main-layout {
-    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
     width: 100vw;
     min-height: 100vh;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    position: relative;
 }
 
 .container {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 50vw;
+    position: relative;
+    width: 100%;
     min-height: 100vh;
     z-index: 2;
     background: none;
@@ -45,24 +42,28 @@ h4 {
     justify-content: flex-start;
     padding: 5vw 3vw 3vw 5vw;
     box-sizing: border-box;
+    grid-column: 1 / 2;
 }
+
 .cover-image-container {
-    position: relative;
-    width: 100vw;
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: flex-start;
+    width: 100%;
+    min-height: 100vh;
+    grid-column: 2 / 3;
     z-index: 1;
+    margin-left: 0; /* Remove previous offset */
 }
 
 .cover-image-container img {
     max-height: 90vh;
-    max-width: 90vw;
     width: auto;
+    max-width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto;
     object-fit: contain;
+    margin-right: 20%;
 }
 
 .carousel-container {
@@ -133,6 +134,66 @@ h4 {
 .carousel-arrow:disabled {
     opacity: 0.3;
     cursor: not-allowed;
+}
+
+.links-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px 0;
+  margin-top: 40px;
+}
+
+.link-row {
+  display: grid;
+  grid-template-columns: 48px 1fr; /* wider first column */
+  align-items: center;
+  text-decoration: none;
+  background: none;
+  border: none;
+  padding: 8px 0;
+  cursor: pointer;
+  transition: background 0.2s;
+  column-gap: 20px; /* add or increase this for more space */
+}
+
+.link-row:focus,
+.link-row:hover {
+  /* background: rgba(200, 117, 173, 0.08); */ /* removed highlight */
+  outline: none;
+}
+
+.icon-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-img {
+  object-fit: contain;
+  transition: transform 0.2s cubic-bezier(.77,0,.18,1);
+}
+
+.link-row:hover .icon-img,
+.link-row:focus .icon-img {
+  transform: scale(1.25);
+}
+
+.link-cell img {
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.link-row:hover .link-cell img,
+.link-row:focus .link-cell img {
+  opacity: 1;
+}
+
+.link-cell h4 {
+  margin: 0;
+  font-size: 0.9em;
+  font-family: 'Space Mono', monospace;
+  font-weight: normal;
+  color: inherit;
 }
 
 /* Mobile */
