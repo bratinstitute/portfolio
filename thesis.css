@@ -4,24 +4,17 @@ html, body {
 }
 
 h2 {
-    font-size: 3em;
-    margin: 0;
-    padding: 0;
-    color: lightcyan;
+    font-family: 'Space Mono', monospace;
+    font-weight: normal;
+    font-size: 1.2em;
+    margin-bottom: 20px;
 }
 
 h3 {
     font-family: 'Space Mono', monospace;
     font-weight: normal;
     font-size: 1em;
-    margin-bottom: 20px; /* Add spacing between paragraphs */
-}
-
-h4 {
-    font-family: 'Space Mono', monospace;
-    font-weight: normal;
-    font-size: 0.8em;
-    margin-bottom: 20px; /* Add spacing between paragraphs */
+    margin-bottom: 20px;
 }
 
 .main-layout {
@@ -211,6 +204,7 @@ h4 {
         padding: 6vw 4vw 4vw 4vw;
         z-index: 2;
     }
+
     .cover-image-container,
     .carousel-container {
         display: none !important;
