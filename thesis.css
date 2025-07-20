@@ -1,6 +1,7 @@
 html, body {
-    background-color: darkseagreen;
+    background-color: black;
     scroll-behavior: smooth;
+    color: grey;
 }
 
 h2 {
@@ -14,7 +15,7 @@ h3 {
     font-family: 'Space Mono', monospace;
     font-weight: normal;
     font-size: 1em;
-    margin-bottom: 20px;
+    margin-top: 6px;
 }
 
 .main-layout {
@@ -59,6 +60,7 @@ h3 {
     display: block;
     object-fit: contain;
     margin-right: 20vw;
+    margin-top: -15vh;
 }
 
 .carousel-container {
@@ -148,7 +150,8 @@ h3 {
   padding: 8px 0;
   cursor: pointer;
   transition: background 0.2s;
-  column-gap: 20px; /* add or increase this for more space */
+  column-gap: 40px; /* add or increase this for more space */
+  margin-bottom: 20px;
 }
 
 .link-row:focus,
