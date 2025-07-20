@@ -7,14 +7,14 @@
       <link rel="icon" type="image/x-icon" href="/images/favicon.png">
    </HEAD>
    <BODY>
-      <div id="header"></div>
-      <script>
-         fetch('header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('header').innerHTML = data;
-            });
-      </script>  
+      <div class="header">
+         <div><h1><a href="https://lisischauer.com/" style="color: #ffce2e;">Lisi Schauer</a></h1></div>
+         <div class="header2">
+            <p><a href="https://lisischauer.com/">work</a></p>
+            <p><a href="about.html">about</a></p>
+            <p><a href="contact.html">contact</a></p>
+         </div>
+      </div>
 
    <div class="container" style="margin-bottom: -100px;">
     <a href="https://bratinstitute.com/" target="_blank"><img src="./images/brat/bratlogo.png" alt="logo" height="100px" style="margin-bottom: 30px;"></a>
