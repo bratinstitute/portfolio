@@ -1,0 +1,23 @@
+html, body {
+    background-color: #60b3e4;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    overflow: hidden; /* Prevent scrollbars for overflowing content */
+}
+
+/* Mobile */
+@media screen and (max-width: 1023px) {
+
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+
+}
