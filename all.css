@@ -61,6 +61,62 @@ a:hover {
     padding: 10px;
 }
 
+.about-link {
+    display: inline-block;
+    position: relative;
+    overflow: visible;
+    text-decoration: none;
+}
+
+.about-img-wrapper {
+    display: inline-block;
+    position: relative;
+}
+
+.about-img {
+    display: block;
+    height: 40px;
+    transition: transform 0.4s cubic-bezier(.77,0,.18,1);
+    position: relative;
+    z-index: 2;
+}
+
+.home-img {
+    display: block;
+    height: 46px;
+    margin-right: -2px;
+    transition: transform 0.4s cubic-bezier(.77,0,.18,1);
+    position: relative;
+    z-index: 2;
+}
+
+.about-reveal-text {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    color: red;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.8em;
+    opacity: 1;
+    pointer-events: none;
+    z-index: 1;
+    text-align: right;
+    background: transparent;
+    transition: none;
+}
+
+.about-link:hover .about-img,
+.about-link:focus .about-img {
+    transform: translateX(-70px);
+}
+
+.about-link:hover .home-img,
+.about-link:focus .home-img {
+    transform: translateX(-70px);
+}
+
 footer {
     text-align: right;
     font-size: 0.8em;
@@ -71,7 +127,7 @@ footer {
 
 /* Mobile */
 @media screen and (max-width: 1023px) {
-    .header {
+    /* .header {
         display: flex;
         flex-direction: column;
         padding-top: 2rem;
@@ -88,13 +144,46 @@ footer {
         margin-top: 0px;
     }
 
+    .header2 {
+        width: 100%;
+    }
+
     .header2 p {
         margin: 0 10px;
         font-size: 1.3em;
+    } */
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 2rem;
+    }
+
+    .header > div:first-child {
+        width: auto;
+        text-align: left;
     }
 
     .header2 {
-        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: auto;
+        margin-left: auto;
+        padding: 0;
+    }
+
+    .about-img {
+        height: 60px;
+        margin-top: -0.7em;
+    }
+
+    .home-img {
+        height: 66px;
+        margin-top: -0.7em;
+        margin-right: -3px;
     }
 
     h1 a {
@@ -117,10 +206,11 @@ footer {
     }
 
     .header2 {
-        font-size: 1em;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 25%;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: auto;
+    margin-left: auto;
     }
 }
