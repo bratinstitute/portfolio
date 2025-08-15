@@ -81,15 +81,6 @@ a:hover {
     z-index: 2;
 }
 
-.home-img {
-    display: block;
-    height: 46px;
-    margin-right: -2px;
-    transition: transform 0.4s cubic-bezier(.77,0,.18,1);
-    position: relative;
-    z-index: 2;
-}
-
 .about-reveal-text {
     position: absolute;
     right: 0;
@@ -112,11 +103,6 @@ a:hover {
     transform: translateX(-70px);
 }
 
-.about-link:hover .home-img,
-.about-link:focus .home-img {
-    transform: translateX(-70px);
-}
-
 footer {
     text-align: right;
     font-size: 0.8em;
@@ -127,32 +113,6 @@ footer {
 
 /* Mobile */
 @media screen and (max-width: 1023px) {
-    /* .header {
-        display: flex;
-        flex-direction: column;
-        padding-top: 2rem;
-    }
-
-    .header > div:first-child {
-        width: 100%;
-        text-align: center;
-    }
-
-    .header > div:nth-child(2) {
-        display: flex;
-        justify-content: center;
-        margin-top: 0px;
-    }
-
-    .header2 {
-        width: 100%;
-    }
-
-    .header2 p {
-        margin: 0 10px;
-        font-size: 1.3em;
-    } */
-
     .header {
         display: flex;
         flex-direction: row;
@@ -178,12 +138,6 @@ footer {
     .about-img {
         height: 60px;
         margin-top: -0.7em;
-    }
-
-    .home-img {
-        height: 66px;
-        margin-top: -0.7em;
-        margin-right: -3px;
     }
 
     h1 a {
