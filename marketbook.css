@@ -16,39 +16,53 @@ html, body {
     background-color: lightgrey;
 }
 
+h2 {
+    font-family: 'Klavika', sans-serif;
+    text-decoration: none;
+    font-size: 2.6em;
+}
+
 h3 {
     font-family: 'Space Mono', monospace;
     font-weight: normal;
     font-size: 1em;
-    margin-bottom: 20px; /* Add spacing between paragraphs */
+    margin-bottom: 20px;
 }
 
 h3 a {
     color: black;
 }
 
+h4 {
+    font-family: 'Klavika', sans-serif;
+    text-decoration: none;
+    margin-bottom: 3px;
+    font-weight: normal;
+    font-size: 1.8em;
+}
+
 h5 {
-    font-family: 'Klavika', sans-serif; /* Fallback to sans-serif */
-    text-decoration: none; /* Optional: remove underline */
-    font-size: 2.6em;
+    font-family: 'Klavika', sans-serif;
+    text-decoration: none;
+    font-size: 2em;
 }
 
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Flexible grid columns */
-    grid-template-rows: repeat(3, auto); /* 3 rows, auto height */
-    gap: 20px; /* Space between grid items */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
     padding: 5%;
-    flex: 1; /* Ensures the container takes up full height */
+    flex: 1;
 }
 
 .image-container {
     position: relative;
-    width: 100%; /* Ensures the container takes up the full width */
+    width: 100%;
 }
 
 .image-container img {
-    display: block; /* Prevents extra space below the image */
+    display: block;
 }
 
 .image-container p {
@@ -60,11 +74,11 @@ h5 {
 
 .sticker {
     position: absolute;
-    top: -3%; /* Adjust this value to fine-tune vertical positioning */
-    right: 85%; /* Adjust this value to fine-tune horizontal positioning */
-    width: 20%; /* Keep the width flexible */
-    height: auto; /* Maintain aspect ratio */
-    z-index: 5; /* Ensure it stays above the mb.gif */
+    top: -3%;
+    right: 85%;
+    width: 20%;
+    height: auto;
+    z-index: 5;
     transition: transform 0.3s ease;
 }
 
@@ -75,27 +89,27 @@ h5 {
 .shelley-sticker {
     position: absolute;
     transform: rotate(-90deg);
-    bottom: -90%; /* Adjust this value to fine-tune vertical positioning */
-    width: 80%; /* Keep the width flexible */
-    height: auto; /* Maintain aspect ratio */
-    z-index: 0; /* Ensure it stays above the mb.gif */
+    bottom: -90%;
+    width: 80%;
+    height: auto;
+    z-index: 0;
 }
 
 .newsletter {
     position: fixed;
-    bottom: 2%; /* Position it 10px from the bottom */
-    background-color: #f8f8f8; /* Optional: Background for better visibility */
-    padding: 10px; /* Add some padding for aesthetics */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Shadow effect */
-    border-radius: 8px; /* Optional: Rounded corners */
-    text-align: center; /* Center-align the text inside */
-    z-index: 1000; /* Ensure it’s above other elements */
+    bottom: 2%;
+    background-color: #f8f8f8;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    z-index: 1000;
  }
  
 .newsletter input[type="email"] {
     padding: 8px;
     margin: 5px 0;
-    width: 80%; /* Adjust width as needed */
+    width: 80%;
     max-width: 300px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -111,44 +125,48 @@ h5 {
  }
  
  .newsletter button:hover {
-    background-color: #2e4673; /* Slightly darker on hover */
+    background-color: #2e4673;
  }
 
 .fb-outercontainer {
     display: grid;
-    grid-template-columns: 25% 75%; /* Define column widths */
-    grid-template-rows: repeat(2, auto); /* 2 rows, auto height */
+    grid-template-columns: 25% 75%;
+    grid-template-rows: repeat(2, auto);
     padding-left: 5%;
     padding-right: 5%;
     padding-bottom: 10%;
-    flex: 1; /* Ensures the container takes up full height */
+    flex: 1;
     background-color: white;
 }
 
 .fb-innergrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Flexible grid layout */
-    grid-template-columns: repeat(4, 1fr); /* Maximum 4 columns */
-    gap: 10px; /* Small space between images */
-    padding: 10px; /* Optional: Padding around the grid */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
 }
  
 .fb-innergrid img {
-    width: 100%; /* Ensures images fill grid cells */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: contain; /* Avoid cropping */
-    display: block; /* Prevent inline spacing issues */
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+footer {
+    z-index: 10;
 }
 
 /* Mobile */
 @media screen and (max-width: 1023px) {
     .container {
-        grid-template-columns: 1fr; /* Single column layout for mobile */
+        grid-template-columns: 1fr;
         display: flex;
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center-align items horizontally */
-        gap: 100px; /* Add space between rows */
-        margin-bottom: -30px; /* Adjust gap below this specific row */
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+        margin-bottom: -30px;
     }
 
     .newsletter {
@@ -158,7 +176,7 @@ h5 {
         width: 40%;
      }
     
-    h5 {
+    h2 {
         font-weight: normal;
     }
 
@@ -179,7 +197,7 @@ h5 {
         left: 3%;
      }
 
-    h5 {
+    h2 {
         font-weight: bold;
     }
 

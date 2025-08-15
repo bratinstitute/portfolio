@@ -4,31 +4,31 @@ html, body {
 
 .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Flexible grid columns */
-    grid-template-rows: repeat(3, auto); /* 3 rows, auto height */
-    gap: 20px; /* Space between grid items */
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
     padding: 5%;
-    flex: 1; /* Ensures the container takes up full height */
+    flex: 1;
 }
 
 .wrapper {
-    position: relative; /* Required for positioning the overlay */
+    position: relative;
     display: flex;
-    align-items: center; /* Vertically center the content */
-    justify-content: center; /* Horizontally center the content */
+    align-items: center;
+    justify-content: center;
 }
 
 .wrapper img {
-    display: block; /* Ensures no extra space below images */
-    width: auto; /* Maintain aspect ratio */
-    transition: transform 0.3s ease; /* Optional hover effect */
-    position: relative; /* Positioning for the overlay */
+    display: block;
+    width: auto;
+    transition: transform 0.3s ease;
+    position: relative;
 }
 
 .wrapper:hover img {
-    transform: scale(1.02); /* Optional zoom effect */
-    opacity: 0.7; /* Slightly reduce opacity */
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for both effects */
+    transform: scale(1.02);
+    opacity: 0.7;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .pitchball {
@@ -39,29 +39,28 @@ html, body {
     filter: brightness(80%);
 }
 
-/* Overlay title styling */
 .image-title {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; /* Covers the entire image */
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0); /* Transparent background */
-    font-family: 'Tholoes', sans-serif; /* Fallback to sans-serif */
+    background-color: rgba(0, 0, 0, 0);
+    font-family: 'Tholoes', sans-serif;
     color: lightcyan;
     font-size: 0em;
-    opacity: 0; /* Initially hidden */
-    transition: opacity 0.3s ease-in-out; /* Smooth fade-in effect */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
     text-align: center;
     padding: 10px;
     box-sizing: border-box;
 }
 
 .wrapper:hover .image-title {
-    opacity: 1; /* Show the title on hover */
+    opacity: 1;
 }
 
 .image-subtitle {
@@ -77,44 +76,43 @@ html, body {
     opacity: 0;
     pointer-events: none;
     z-index: 2;
-    /* Typed reveal effect */
-    clip-path: inset(0 100% 0 0); /* Hide all text initially */
-    opacity: 1; /* Always visible for typing effect */
+    clip-path: inset(0 100% 0 0);
+    opacity: 1;
     transition:
         clip-path 0.5s cubic-bezier(.77,0,.18,1);
 }
 
 .wrapper:hover .image-subtitle {
-    clip-path: inset(0 0 0 0); /* Reveal all text */
+    clip-path: inset(0 0 0 0);
 }
 
 .wrapper:not(:hover) .image-subtitle {
-    clip-path: inset(0 100% 0 0); /* Hide all text */
-    transition-duration: 0.2s; /* Quick hide */
+    clip-path: inset(0 100% 0 0);
+    transition-duration: 0.2s;
 }
 
 /* Mobile */
 @media screen and (max-width: 1023px) {
     .container {
-        grid-template-columns: 1fr; /* Single column layout for mobile */
+        grid-template-columns: 1fr;
         display: flex;
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center-align items horizontally */
-        gap: 100px; /* Add space between rows */
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
     }
 
     .container .wrapper.image2 {
-        margin-bottom: -30px; /* Adjust gap below this specific row */
+        margin-bottom: -30px;
     }
     
     .wrapper {
         width: 80%;
-        margin: 0 auto; /* Center the wrapper horizontally */
-        text-align: center; /* Align text and content to the center */
+        margin: 0 auto;
+        text-align: center;
     }
 
     .wrapper img {
-        max-height: 500px; /* Ensures uniform image height */
+        max-height: 500px;
     }
 
     .wrapper:hover .image-title {
@@ -125,43 +123,43 @@ html, body {
 /* Desktop */
 @media screen and (min-width: 1024px) {
     .container {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Auto-fit columns */
-        grid-template-rows: repeat(3, auto); /* 3 rows, auto height */
-        gap: 60px; /* Space between grid items */
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-rows: repeat(3, auto);
+        gap: 60px;
     }
 
-    .image1 {
-        grid-column: 1; /* Place image 1 in the first column */
+    .image1 {/* The Pitch */
+        grid-column: 1;
         grid-row: 1;
     }
 
-    .image2 {
-        grid-column: 3; /* Place image 2 in the third column */
+    .image2 {/* Brat Institute */
+        grid-column: 3;
         grid-row: 1;
     }
 
-    .image3 {
-        grid-column: 5; /* Place image 3 in the fifth column */
+    .image3 {/* Profane */
+        grid-column: 5;
         grid-row: 1;
     }
 
-    .image4 {
-        grid-column: 1; /* Place image 4 in the second column */
+    .image4 {/* Marketbook */
+        grid-column: 1;
         grid-row: 2;
     }
 
-    .image5 {
-        grid-column: 3; /* Place image 5 in the fourth column */
+    .image5 {/* Poster House */
+        grid-column: 3;
         grid-row: 2;
     }
 
-    .image6 {
-        grid-column: 5; /* Place image 5 in the fourth column */
+    .image6 {/* Partygirl */
+        grid-column: 5;
         grid-row: 2;
     }
 
     .wrapper img {
-        max-height: 250px; /* Ensures uniform image height */
+        max-height: 250px;
     }
     
     .wrapper:hover .image-title {

@@ -7,9 +7,9 @@ html, body {
     justify-content: center;
     align-items: center;
     position: relative;
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
     margin: 0;
-    overflow: hidden; /* Prevent scrollbars for overflowing content */
+    overflow: hidden;
 }
 
 /* Mobile */

@@ -20,7 +20,7 @@ h3 {
 
 .main-layout {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-columns: 1fr 1fr;
     width: 100vw;
     min-height: 100vh;
     position: relative;
@@ -142,7 +142,7 @@ h3 {
 
 .link-row {
   display: grid;
-  grid-template-columns: 48px 1fr; /* wider first column */
+  grid-template-columns: 48px 1fr;
   align-items: center;
   text-decoration: none;
   background: none;
@@ -150,13 +150,12 @@ h3 {
   padding: 8px 0;
   cursor: pointer;
   transition: background 0.2s;
-  column-gap: 40px; /* add or increase this for more space */
+  column-gap: 40px;
   margin-bottom: 20px;
 }
 
 .link-row:focus,
 .link-row:hover {
-  /* background: rgba(200, 117, 173, 0.08); */ /* removed highlight */
   outline: none;
 }
 
@@ -278,9 +277,9 @@ h3 {
 /* Desktop */
 @media screen and (min-width: 1024px) {
     .container {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Auto-fit columns */
-        grid-template-rows: repeat(3, auto); /* 3 rows, auto height */
-        gap: 60px; /* Space between grid items */
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-rows: repeat(3, auto);
+        gap: 60px;
     }
 
     .mobile-carousel-container {

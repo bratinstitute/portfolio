@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // List all your thesis scan images here in order:
     const images = [
         "./images/thesis/scans/02-03.webp",
         "./images/thesis/scans/04-05.webp",

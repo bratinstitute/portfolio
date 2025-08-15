@@ -87,22 +87,22 @@ h4 {
 .profanetitle3 h4 {
     text-align: left;
     color: black;
-    line-height: 1.2; /* Adjust line height for tighter spacing */
+    line-height: 1.2;
 }
 
 .profane-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
-    grid-template-rows: repeat(4, auto);  /* Four rows with height auto */
-    gap: 10px 10px; /* Reduce vertical gap (row-gap) to 5px, horizontal gap (column-gap) stays 10px */
-    padding: 10px; /* Optional: padding around the grid */
-    padding-bottom: 30px; /* Optional: padding around the grid */
-    width: 100%; /* Responsive width */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 10px 10px;
+    padding: 10px;
+    padding-bottom: 30px;
+    width: 100%;
 }
 
 .profane-grid div {
-    padding: 0px; /* Adjust padding for finer control */
-    text-align: center; /* Optional: center text */
+    padding: 0px;
+    text-align: center;
 }
 
 .profane-grid p {
@@ -110,22 +110,22 @@ h4 {
     font-style: normal;
     color: lightcyan;
     margin: 0;
-    line-height: 1.2; /* Adjust line height for tighter spacing */
+    line-height: 1.2;
 }
 
 .profane-grid h4 {
     text-align: left;
     margin: 10%;
-    line-height: 1.2; /* Adjust line height for tighter spacing */
+    line-height: 1.2;
 }
 
 .image-container {
     position: relative;
-    width: 100%; /* Ensures the container takes up the full width */
+    width: 100%;
 }
 
 .image-container img {
-    display: block; /* Prevents extra space below the image */
+    display: block;
 }
 
 .image-container p {
