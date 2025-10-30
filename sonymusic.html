@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Sony Music</title>
+      <link rel="stylesheet" type="text/css" href="sonymusic.css">
+      <link rel="stylesheet" type="text/css" href="all.css">
+      <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+   </head>
+   <body>
+      <div class="header">
+         <div><h1><a href="https://lisischauer.com/" style="color: #ff1837;">Lisi Schauer</a></h1></div>
+         <div class="header2">
+            <a href="about.html" class="about-link">
+               <span class="about-img-wrapper">
+                  <img src="images/ID.png" alt="about" class="about-img">
+                  <span class="about-reveal-text">about</span>
+               </span>
+            </a>
+         </div>
+      </div>
+         <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQfnLrnV5Jc5ap3K7TwAebKWeZUq9bOZg1IqhM79Vz3WjZ-vj7gtbFCrDYT3sEElDHljL84r7cUb6s6/pubembed?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+      <div>
+
+      <div>
+         <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQ5ONu3YRT6wvoer9d-t6_RLl4Kkk7MY0wMFJbW6m8aios-OwB5tyyfl95QEH1E-HblrDtGX2pic7Hn/pubembed?start=false&loop=false&delayms=3000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+      </div>
+         
+      </div>
+
+      <div id="footer"></div>
+      <script>
+         fetch('footer.html')
+             .then(response => response.text())
+             .then(data => {
+                 document.getElementById('footer').innerHTML = data;
+             });
+      </script>
+   </body>
+</html>
