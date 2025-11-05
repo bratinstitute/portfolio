@@ -308,7 +308,9 @@ h3 {
         cursor: not-allowed;
     }
 
-    .video-item { width: 45%; }
+    .video-item { width: 43%; }
+
+    .videos-row {gap: 4%;
 }
 
 /* Desktop */
