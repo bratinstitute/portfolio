@@ -231,14 +231,17 @@ h3 {
 /* Mobile */
 @media screen and (max-width: 1023px) {
     .main-layout {
+        display: block;
         flex-direction: column;
         align-items: stretch;
+        min-height: auto;
     }
+
     .container {
         position: static;
         width: 100vw;
         min-height: auto;
-        padding: 6vw 4vw 4vw 4vw;
+        padding: 4vw 3vw 2.5vw 4vw;
         z-index: 2;
     }
 
@@ -308,9 +311,21 @@ h3 {
         cursor: not-allowed;
     }
 
-    .video-item { width: 43%; }
+    .videos-row {
+        margin-top: 12px;
+        gap: 40px;
+    }
 
-    .videos-row {gap: 4%;
+    .video-item {
+        width: 80%;
+        min-width: 0;
+    }
+
+    .video-item video {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
 }
 
 /* Desktop */
