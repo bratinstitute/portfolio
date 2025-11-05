@@ -50,6 +50,30 @@ h3 {
     grid-column: 2 / 3;
     z-index: 1;
     margin-left: 0;
+    position: relative;
+}
+
+.cover-hover-text {
+    position: absolute;
+    top: 8px;
+    right: 5vw;
+    background: transparent;
+    color: #fff;
+    font-family: 'Space Mono', monospace;
+    font-size: 0.8em;
+    padding: 6px 8px;
+    border-radius: 4px;
+    opacity: 0;
+    transform: translateY(-4px);
+    transition: opacity 180ms ease, transform 180ms ease;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.cover-image-container:hover .cover-hover-text,
+.cover-image-container:focus-within .cover-hover-text {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .cover-image-container img {
@@ -100,19 +124,15 @@ h3 {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: white;
-    color: black;
+    background: transparent;
+    color: #fff;
     border: none;
-    border-radius: 6px;
     width: 32px;
     height: 32px;
-    font-size: 1.2em;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
+    font-size: 3em;
+    font-family: 'Space Mono', monospace;
     cursor: pointer;
     z-index: 10;
-    opacity: 0.85;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -121,11 +141,11 @@ h3 {
 }
 
 #carousel-prev {
-    left: 12px;
+    left: 2%;
 }
 
 #carousel-next {
-    right: 12px;
+    right: 2%;
 }
 
 .carousel-arrow:disabled {
@@ -281,19 +301,15 @@ h3 {
         position: relative;
         top: 0%;
         transform: translateY(-50%);
-        background: #ffffff;
-        color: black;
+        background: transparent;
+        color: #fff;
         border: none;
-        border-radius: 6px;
         width: 32px;
         height: 32px;
-        font-size: 1.2em;
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: bold;
+        font-size: 4em;
+        font-family: 'Space Mono', monospace;
         cursor: pointer;
         z-index: 10;
-        opacity: 0.85;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -301,10 +317,10 @@ h3 {
         transition: background 0.2s, opacity 0.2s;
     }
     #mobile-carousel-prev {
-        left: 12px;
+        left: 2%;
     }
     #mobile-carousel-next {
-        right: 12px;
+        right: 2%;
     }
     .mobile-carousel-container .carousel-arrow:disabled {
         opacity: 0.3;
