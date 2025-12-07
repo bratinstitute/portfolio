@@ -183,6 +183,15 @@ footer {
     .shelley-sticker {
         right: -8%;
     }
+
+    .fb-innergrid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .hidemobile {
+    display: none !important;
+  }
 }
 
 /* Desktop */
