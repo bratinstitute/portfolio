@@ -19,6 +19,7 @@ html, body {
     max-width: 100%;
     height: auto;
     margin: 0 auto;
+    margin-top: -5%;
 }
 
 .video-frame {
@@ -43,20 +44,21 @@ html, body {
 }
 
 /* Mobile */
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 980px) {
     .video-wrapper {
-        width: 500px;
+        width: 88vw;
+        margin-top: -100px;
     }
 
     .video-frame {
-        width: 500px;
+        width: 88vw;
     }
 
     .video-wrapper iframe {
-        width: 400px;
+        width: 70vw;
     }
 }
 
 /* Desktop */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 981px) {
 }
