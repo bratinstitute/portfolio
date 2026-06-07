@@ -118,6 +118,14 @@ html, body {
     .wrapper:hover .image-title {
         font-size: 5em;
     }
+
+    .image7 img {
+        transform: translateY(10%);
+    }
+
+    .image7:hover img {
+        transform: translateY(10%) scale(1.02);
+    }
 }
 
 /* Desktop */
@@ -158,8 +166,26 @@ html, body {
         grid-row: 2;
     }
 
-    .image7 {/* Partygirl */
+    .image7 {/* New Partner */
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .image7 img {
+        transform: translateY(10%);
+    }
+
+    .image7:hover img {
+        transform: translateY(10%) scale(1.02);
+    }
+
+    .image8 {/* Partygirl */
         grid-column: 3;
+        grid-row: 3;
+    }
+
+    .image9 {/* Twilight */
+        grid-column: 5;
         grid-row: 3;
     }
 

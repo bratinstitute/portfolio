@@ -1,0 +1,23 @@
+html, body {
+    background-color: tan;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Mobile */
+@media screen and (max-width: 1023px) {
+
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+
+}
