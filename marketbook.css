@@ -20,6 +20,7 @@ h2 {
     font-family: 'Klavika', sans-serif;
     text-decoration: none;
     font-size: 2.6em;
+    margin-bottom: 5%;
 }
 
 h3 {
@@ -45,6 +46,15 @@ h5 {
     font-family: 'Klavika', sans-serif;
     text-decoration: none;
     font-size: 2em;
+}
+
+h6 {
+    font-family: 'Klavika', sans-serif;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 1.3em;
+    color: #707070;
+    margin-top: 8%;
 }
 
 .container {
@@ -167,6 +177,10 @@ footer {
         align-items: center;
         gap: 100px;
         margin-bottom: -30px;
+    }
+
+    .image-container {
+    margin-top: -50px;
     }
 
     .newsletter {
