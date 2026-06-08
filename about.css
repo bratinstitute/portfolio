@@ -43,6 +43,12 @@ html, body {
         margin-top: -0.7em;
         margin-right: -3px;
     }
+
+    .socials{
+        font-family: 'Space Mono', monospace;
+        color: red;
+        font-size: 0.8em;
+    }
 }
 
 /* Desktop */
@@ -53,5 +59,10 @@ html, body {
 
     .text p {
         font-size: 3.7em;
+    }
+
+    .socials {
+        font-family: 'Space Mono', monospace;
+        color: red;
     }
 }
