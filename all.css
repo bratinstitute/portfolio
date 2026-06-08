@@ -104,11 +104,28 @@ a:hover {
 }
 
 footer {
-    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     font-size: 0.8em;
     padding: 10px;
     width: 100%;
     bottom: 0;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.homepage footer a {
+    display: none;
 }
 
 /* Mobile */
