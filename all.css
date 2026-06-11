@@ -52,6 +52,12 @@ a:hover {
     color: darkslategrey;
 }
 
+.homepage .header > div:first-child {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+
 .header {
     padding: 10px;
     margin-top: 0%;
@@ -61,47 +67,50 @@ a:hover {
     padding: 10px;
 }
 
-.marquee{
-	display: flex;
-	flex-direction: row;
-	width: 100%;
-	overflow: hidden;
-	--textWidth: 100;
-	--animSpeed: 100;
-	
-	.marquee__content{
-		flex-shrink: 0;
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		animation: marquee-scroll calc( (var(--textWidth) * 2s) / var(--animSpeed) ) linear infinite;
-	}
-	
-	.marquee__text{
-		display: block;
-        font-family: 'Space Mono', monospace;
-        color: red;
-        font-size: 0.8em;
-		flex-shrink: 0;
-		flex-grow: 0;
-		margin: 0;
-		padding-right: 8px;
-	}
-	
-	.marquee__copies{
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		height: 100%;
-		width: 0;
-		flex-grow: 0;
-		flex-shrink: 0;
-	}
+.marquee {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    overflow: hidden;
+    --textWidth: 100;
+    --animSpeed: 100;
 }
 
-@keyframes marquee-scroll{
-	0%   { transform: translateX(0)}
-	100% { transform: translateX(-100%)}
+.marquee__content {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    animation: marquee-scroll calc((var(--textWidth) * 2s) / var(--animSpeed)) linear infinite;
+}
+
+.marquee__text {
+    display: block;
+    font-family: 'Space Mono', monospace;
+    color: red;
+    font-size: 0.8em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    margin: 0;
+    padding-right: 8px;
+}
+
+.marquee__copies {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 0;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+@keyframes marquee-scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
 }
 
 .about-link {
@@ -186,6 +195,16 @@ footer a {
         text-align: left;
     }
 
+    .homepage .header {
+    padding-bottom: 20px;
+    }
+
+    .homepage .header2 {
+    position: absolute;
+    top: 36px;
+    right: 20px;
+    }
+
     .header2 {
         display: flex;
         justify-content: flex-end;
@@ -217,6 +236,16 @@ footer a {
         display: flex;
         align-items: center;
         justify-content: space-between;
+    }
+
+    .homepage .header {
+    padding-bottom: 40px;
+    }
+
+    .homepage .header2 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
     }
 
     .header2 {

@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tags</title>
-    <link rel="stylesheet" href="all.css">
+    <title>Lisi Schauer</title>
+    <link rel="stylesheet" type="text/css" href="test.css">
+    <link rel="stylesheet" type="text/css" href="all.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="script.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
 </head>
-<body>
+<body class="homepage">
     <div class="marquee">
         <div class="marquee__content">
             <p class="marquee__text">
@@ -23,5 +25,100 @@
             <div class="marquee__copies" aria-hidden="true"></div>
         </div>
     </div>
+
+    <div class="header">
+   <div><h1><a href="https://lisischauer.com/">Lisi Schauer</a></h1></div>
+   <div class="header2">
+      <a href="about.html" class="about-link">
+         <span class="about-img-wrapper">
+            <img src="images/ID.png" alt="about" class="about-img">
+            <span class="about-reveal-text">about</span>
+         </span>
+      </a>
+   </div>
+</div>
+
+    <div class="container">
+        <div class="wrapper image1">
+            <a href="thesis.html">
+               <img src="./images/ball2.gif" alt="The Pitch baseball" class="pitchball">
+               <div class="image-title">The<br>Pitch</div>
+               <div class="image-subtitle">marketing * publication * web design</div>
+            </a>
+         </div>
+         
+         <div class="wrapper image2">
+            <a href="brat.html">
+               <img src="./images/providence.png" alt="brat institute top">
+               <div class="image-title">Brat<br>Institute</div>
+               <div class="image-subtitle">brand * apparel * retail</div>
+            </a>
+         </div>
+
+         <div class="wrapper image3">
+            <a href="profane.html">
+               <img src="./images/profane1.gif" alt="perfume bottle">
+               <div class="image-title">Profane</div>
+               <div class="image-subtitle">brand * packaging * retail</div>
+            </a>
+         </div>
+
+         <div class="wrapper image4">
+            <a href="marketbook.html">
+               <img src="./images/marketbook.png" alt="marketbook">
+               <div class="image-title">Market<br>Book</div>
+               <div class="image-subtitle">print * layout * publication</div>
+            </a>
+         </div>
+
+         <div class="wrapper image5">
+            <a href="posterhouse.html">
+               <img src="./images/tv.gif" alt="Poster House animation">
+               <div class="image-title">Poster<br>House</div>
+               <div class="image-subtitle">motion * exhibition</div>
+            </a>
+         </div>
+
+         <div class="wrapper image6">
+            <a href="sonymusic.html">
+               <img src="./images/sony.png" alt="sony music">
+               <div class="image-title">Sony<br>Music</div>
+               <div class="image-subtitle">marketing * animation * presentation design</div>
+            </a>
+         </div>
+
+         <div class="wrapper image7">
+            <a href="tbd.html">
+               <img src="./images/NewPartner.gif" alt="New Partner" class="newpartner">
+               <div class="image-title">New<br>Partner</div>
+               <div class="image-subtitle">brand * logo design</div>
+            </a>
+         </div>
+
+         <div class="wrapper image8">
+            <a href="partygirl.html">
+               <img src="./images/fish1.png" alt="fish plate">
+               <div class="image-title">Partygirl</div>
+               <div class="image-subtitle">production design * prop styling</div>
+            </a>
+         </div>
+
+         <div class="wrapper image9">
+            <a href="tbd.html">
+               <img src="./images/twilight.png" alt="twilight">
+               <div class="image-title">Twilight on the Internet</div>
+               <div class="image-subtitle">print * layout * publication</div>
+            </a>
+         </div>
+      </div>
+
+    <div id="footer"></div>
+      <script>
+         fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+               document.getElementById('footer').innerHTML = data;
+            });
+      </script>
 </body>
 </html>
