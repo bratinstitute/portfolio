@@ -187,7 +187,7 @@ footer a {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding-top: 2rem;
+        padding-top: 14px;
     }
 
     .header > div:first-child {
@@ -201,8 +201,8 @@ footer a {
 
     .homepage .header2 {
     position: absolute;
-    top: 36px;
-    right: 20px;
+    top: 34px;
+    right: 10px;
     }
 
     .header2 {
