@@ -32,11 +32,7 @@ html, body {
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.pitchball {
-    transform: scale(0.9);
-}
-
-.wrapper:hover .pitchball {
+.wrapper:hover .image1 img {
     filter: brightness(80%);
 }
 
@@ -103,16 +99,25 @@ html, body {
         gap: 100px;
     }
 
+    .image1 img {
+    transform: scale(0.9);
+    }
+
+    .container .wrapper.image1 {
+        margin-top: 10px;
+        margin-bottom: -30px;
+    }
+
     .container .wrapper.image2 {
         margin-bottom: -30px;
     }
 
     .container .wrapper.image7 {
-        margin-bottom: -30px;
+        margin-bottom: -80px;
     }
 
     .image7 .image-subtitle {
-        bottom: 30px;
+        bottom: 80px;
     }
     
     .wrapper {
@@ -140,6 +145,10 @@ html, body {
 
     .wrapper img {
     transform: scale(1.2);
+    }
+
+    .image1 img {
+    transform: scale(1.12);
     }
 
     .image1 {/* The Pitch */
@@ -184,6 +193,10 @@ html, body {
     .image8 {/* Partygirl */
         grid-column: 3;
         grid-row: 3;
+    }
+
+    .image8 img {
+    transform: scale(1.26);
     }
 
     .image9 {/* Twilight */
