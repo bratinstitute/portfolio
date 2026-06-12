@@ -84,7 +84,7 @@ a:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
-    animation: marquee-scroll calc((var(--textWidth) * 2s) / var(--animSpeed)) linear infinite;
+    animation: marquee-scroll calc((var(--textWidth) * 2.5s) / var(--animSpeed)) linear infinite;
 }
 
 .marquee__text {

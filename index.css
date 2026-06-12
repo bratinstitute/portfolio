@@ -5,7 +5,6 @@ html, body {
 .container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    grid-template-rows: repeat(3, auto);
     gap: 20px;
     padding: 5%;
     flex: 1;
@@ -16,6 +15,24 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    transition: opacity 0.45s ease, transform 0.45s ease;
+    will-change: opacity, transform;
+}
+
+.wrapper.filter-hidden {
+    opacity: 0;
+    transform: translateY(25px) scale(0.94);
+    pointer-events: none;
+}
+
+.wrapper.hidden-by-filter {
+    display: none !important;
+}
+
+.wrapper.hidden-by-filter {
+    display: none !important;
 }
 
 .wrapper img {
@@ -117,7 +134,7 @@ html, body {
     }
 
     .image7 .image-subtitle {
-        bottom: 80px;
+        bottom: 70px;
     }
     
     .wrapper {
@@ -138,74 +155,40 @@ html, body {
 /* Desktop */
 @media screen and (min-width: 1024px) {
     .container {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        grid-template-rows: repeat(3, auto);
+        grid-template-columns: repeat(3, minmax(150px, 1fr));
+        grid-template-rows: auto auto auto;
         gap: 100px;
+        grid-template-areas:
+            "pitch brat profane"
+            "market poster sony"
+            "newpartner party twilight";
     }
 
+    .image1 { grid-area: pitch; }
+    .image2 { grid-area: brat; }
+    .image3 { grid-area: profane; }
+    .image4 { grid-area: market; }
+    .image5 { grid-area: poster; }
+    .image6 { grid-area: sony; }
+    .image7 { grid-area: newpartner; }
+    .image8 { grid-area: party; }
+    .image9 { grid-area: twilight; }
+
     .wrapper img {
-    transform: scale(1.2);
+        transform: scale(1.2);
+        max-height: 250px;
     }
 
     .image1 img {
-    transform: scale(1.12);
-    }
-
-    .image1 {/* The Pitch */
-        grid-column: 1;
-        grid-row: 1;
-    }
-
-    .image2 {/* Brat Institute */
-        grid-column: 3;
-        grid-row: 1;
-    }
-
-    .image3 {/* Profane */
-        grid-column: 5;
-        grid-row: 1;
-    }
-
-    .image4 {/* Marketbook */
-        grid-column: 1;
-        grid-row: 2;
-    }
-
-    .image5 {/* Poster House */
-        grid-column: 3;
-        grid-row: 2;
-    }
-
-    .image6 {/* Sony */
-        grid-column: 5;
-        grid-row: 2;
-    }
-
-    .image7 {/* New Partner */
-        grid-column: 1;
-        grid-row: 3;
+        transform: scale(1.12);
     }
 
     .image7 img {
         margin-bottom: -50px;
     }
 
-    .image8 {/* Partygirl */
-        grid-column: 3;
-        grid-row: 3;
-    }
-
     .image8 img {
-    transform: scale(1.26);
-    }
-
-    .image9 {/* Twilight */
-        grid-column: 5;
-        grid-row: 3;
-    }
-
-    .wrapper img {
-        max-height: 250px;
+        transform: scale(1.26);
     }
     
     .wrapper:hover .image-title {

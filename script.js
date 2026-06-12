@@ -150,3 +150,86 @@ function setMarqueeContents(){
     $('.marquee__content > .marquee__text').clone().appendTo('.marquee__copies');
 	}
 }
+
+         function getCategories(item) {
+            return (item.getAttribute('data-category') || '')
+               .split(/\s*,\s*|\s+/)
+               .filter(Boolean);
+         }
+
+         function itemMatchesCategory(item, category) {
+            return getCategories(item).includes(category);
+         }
+
+         function showItem(item) {
+            item.classList.remove('hidden-by-filter');
+            requestAnimationFrame(() => {
+               item.classList.remove('filter-hidden');
+            });
+         }
+
+         function hideItem(item) {
+            if (item.classList.contains('hidden-by-filter') || item.classList.contains('filter-hidden')) return;
+            item.classList.add('filter-hidden');
+
+            function handleTransitionEnd(event) {
+               if (event.propertyName !== 'opacity') return;
+               item.removeEventListener('transitionend', handleTransitionEnd);
+               if (item.classList.contains('filter-hidden')) {
+                  item.classList.add('hidden-by-filter');
+               }
+            }
+
+            item.addEventListener('transitionend', handleTransitionEnd);
+         }
+
+         function filterItems(category) {
+            const items = document.querySelectorAll('.wrapper');
+            const links = document.querySelectorAll('.filter-link[data-category]');
+
+            items.forEach(item => {
+               if (category === 'all' || itemMatchesCategory(item, category)) {
+                  showItem(item);
+               } else {
+                  hideItem(item);
+               }
+            });
+
+            links.forEach(link => {
+               link.classList.toggle('selected', link.dataset.category === category);
+            });
+         }
+
+         function getCategoryFromURL() {
+            const params = new URLSearchParams(window.location.search);
+            return params.get('category') || 'all';
+         }
+
+         function bindFilterLinks() {
+            const links = document.querySelectorAll('.filter-link[data-category]');
+            links.forEach(link => {
+               link.addEventListener('click', event => {
+                  event.preventDefault();
+                  const category = link.dataset.category || 'all';
+                  history.pushState(null, '', `?category=${category}`);
+                  filterItems(category);
+               });
+            });
+         }
+
+         window.addEventListener('popstate', () => {
+            const category = getCategoryFromURL();
+            filterItems(category);
+         });
+
+         document.addEventListener('DOMContentLoaded', () => {
+            bindFilterLinks();
+            const category = getCategoryFromURL();
+            if (category === 'all') {
+               filterItems(category);
+            } else {
+               window.requestAnimationFrame(() => {
+                  window.requestAnimationFrame(() => filterItems(category));
+               });
+            }
+         });
